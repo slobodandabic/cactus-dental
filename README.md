@@ -1,7 +1,7 @@
 # Cactus Wren Dental (concept site)
 
 Single-page website for a fictional family dental office in Phoenix, AZ.
-Built as a portfolio project by [Slobodan Dabic](https://slobodandabic.com).
+Built as a portfolio project by [Slobodan Dabic](https://sdabic.com).
 
 **Live:** https://cactus-dental-beta.vercel.app
 
