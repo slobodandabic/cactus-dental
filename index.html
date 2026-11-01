@@ -1,445 +1,1444 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Cactus Wren Dental | Family &amp; Cosmetic Dentist in Phoenix, AZ</title>
-  <meta name="description" content="Gentle family dentistry in Phoenix. Cleanings, whitening, Invisalign, implants and same-day emergencies. Most PPO plans accepted. Book online in 60 seconds.">
-  <link rel="canonical" href="https://cactus-dental-beta.vercel.app/">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cactus Wren Dental · Family &amp; Cosmetic Dentist in Phoenix, AZ</title>
+<meta name="description" content="Gentle family dentist in Arcadia, Phoenix. Free 3D smile preview, prices up front, most PPO plans, $29/mo membership and same-day emergencies. Book online.">
+<link rel="canonical" href="https://cactus-dental.slobodan.workers.dev/">
+<meta name="theme-color" content="#f4ede3">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
 
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Cactus Wren Dental | Phoenix Family Dentist">
-  <meta property="og:description" content="Gentle dentistry for the whole family. Book online, check your insurance, or call for a same-day emergency visit.">
-  <meta property="og:url" content="https://cactus-dental-beta.vercel.app/">
-  <meta property="og:image" content="https://cactus-dental-beta.vercel.app/og-image.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="theme-color" content="#ffffff">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Cactus Wren Dental">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Cactus Wren Dental · Phoenix family &amp; cosmetic dentist">
+<meta property="og:description" content="See your new smile in 3D before you commit, with an exact price up front. Concept site designed and built by Slobodan Dabic.">
+<meta property="og:url" content="https://cactus-dental.slobodan.workers.dev/">
+<meta property="og:image" content="https://cactus-dental.slobodan.workers.dev/og-image.png?v=2">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Cactus Wren Dental: a 3D scan of a tooth next to the headline “A dentist you’ll actually look forward to.”">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Cactus Wren Dental · Phoenix family &amp; cosmetic dentist">
+<meta name="twitter:description" content="See your new smile in 3D before you commit, with an exact price up front.">
+<meta name="twitter:image" content="https://cactus-dental.slobodan.workers.dev/og-image.png?v=2">
+<meta name="twitter:image:alt" content="Cactus Wren Dental: a 3D scan of a tooth next to the headline “A dentist you’ll actually look forward to.”">
 
-  <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preload" href="fonts/bricolage-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" as="image" href="images/hero-wide.webp" imagesrcset="images/hero-760.webp 760w, images/hero-wide.webp 1400w" imagesizes="(max-width: 900px) 92vw, 44vw" fetchpriority="high">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400..800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+<script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.169.0/build/three.module.min.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.169.0/examples/jsm/"}}</script>
 
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Dentist",
-    "name": "Cactus Wren Dental",
-    "url": "https://cactus-dental-beta.vercel.app/",
-    "telephone": "+1-602-555-0163",
-    "address": { "@type": "PostalAddress", "addressLocality": "Phoenix", "addressRegion": "AZ", "addressCountry": "US" },
-    "openingHours": ["Mo-Th 07:00-17:00", "Fr 07:00-14:00", "Sa 08:00-12:00"],
-    "availableLanguage": ["English", "Spanish"],
-    "priceRange": "$$"
-  }
-  </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Dentist",
+      "@id": "https://cactus-dental.slobodan.workers.dev/#practice",
+      "name": "Cactus Wren Dental",
+      "description": "Family and cosmetic dental office in Arcadia, Phoenix (concept project).",
+      "url": "https://cactus-dental.slobodan.workers.dev/",
+      "image": "https://cactus-dental.slobodan.workers.dev/og-image.png?v=2",
+      "telephone": "+1-602-555-0163",
+      "email": "hello@cactuswren.example",
+      "priceRange": "$$",
+      "address": { "@type": "PostalAddress", "streetAddress": "Camelback Rd & 44th St", "addressLocality": "Phoenix", "addressRegion": "AZ", "postalCode": "85018", "addressCountry": "US" },
+      "areaServed": ["Arcadia", "Biltmore", "Scottsdale", "Paradise Valley", "Phoenix, AZ"],
+      "knowsLanguage": ["en", "es"],
+      "openingHoursSpecification": [
+        { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday"], "opens": "07:00", "closes": "17:00" },
+        { "@type": "OpeningHoursSpecification", "dayOfWeek": "Friday", "opens": "07:00", "closes": "14:00" },
+        { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "08:00", "closes": "12:00" }
+      ],
+      "paymentAccepted": "Cash, credit card, HSA/FSA, CareCredit, Sunbit",
+      "makesOffer": [
+        { "@type": "Offer", "name": "New patient exam, X-rays and cleaning", "price": "99", "priceCurrency": "USD" },
+        { "@type": "Offer", "name": "Wren Smile Plan (adult membership)", "price": "29", "priceCurrency": "USD", "description": "Per month, or $299 per year" },
+        { "@type": "Offer", "name": "Wren Smile Plan (child membership)", "price": "19", "priceCurrency": "USD", "description": "Per month, or $199 per year" },
+        { "@type": "Offer", "name": "Free 3D smile preview and consult", "price": "0", "priceCurrency": "USD" },
+        { "@type": "Offer", "name": "In-office teeth whitening", "price": "450", "priceCurrency": "USD" },
+        { "@type": "Offer", "name": "Same-day crown", "price": "1290", "priceCurrency": "USD" }
+      ],
+      "employee": [
+        { "@type": "Person", "name": "Dr. Elena Márquez", "jobTitle": "Founder, family & cosmetic dentist (DDS)", "knowsLanguage": ["en", "es"] },
+        { "@type": "Person", "name": "Dr. Omar Haddad", "jobTitle": "Implants & oral surgery (DMD)" },
+        { "@type": "Person", "name": "Dr. Ben Whitaker", "jobTitle": "Orthodontics & Invisalign (DMD)" },
+        { "@type": "Person", "name": "Lina Tran", "jobTitle": "Lead dental hygienist (RDH)" }
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://cactus-dental.slobodan.workers.dev/#website",
+      "url": "https://cactus-dental.slobodan.workers.dev/",
+      "name": "Cactus Wren Dental",
+      "inLanguage": "en-US",
+      "creator": { "@type": "Person", "name": "Slobodan Dabic", "url": "https://sdabic.com", "sameAs": ["https://sdabic.com"], "knowsLanguage": ["en", "sr"] }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://cactus-dental.slobodan.workers.dev/#webpage",
+      "url": "https://cactus-dental.slobodan.workers.dev/",
+      "name": "Cactus Wren Dental · Family & Cosmetic Dentist in Phoenix, AZ",
+      "isPartOf": { "@id": "https://cactus-dental.slobodan.workers.dev/#website" },
+      "about": { "@id": "https://cactus-dental.slobodan.workers.dev/#practice" }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "What should I bring to my first appointment?", "acceptedAnswer": { "@type": "Answer", "text": "Bring a photo ID, your insurance card if you have one, and a list of any medications you take. You can fill out the new patient forms online after you book, which saves about 15 minutes in the office." } },
+        { "@type": "Question", "name": "How much will my visit cost?", "acceptedAnswer": { "@type": "Answer", "text": "We always tell you the price before treatment. With in-network insurance, cleanings and exams are usually covered at 100%. Without insurance, our new patient special is $99, and the Wren Smile Plan starts at $29 a month." } },
+        { "@type": "Question", "name": "What is the 3D smile preview?", "acceptedAnswer": { "@type": "Answer", "text": "A two-minute intraoral scan, with no impression goop. You see every tooth in 3D on the screen in front of your chair, preview whitening or Invisalign results, and get an exact price before anything starts. It is free with any consult." } },
+        { "@type": "Question", "name": "Do you see kids?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. We see children from their first tooth (around age one) and up. Parents are always welcome to stay in the room." } },
+        { "@type": "Question", "name": "I'm nervous about the dentist. Can you help?", "acceptedAnswer": { "@type": "Answer", "text": "Absolutely. Tell us when you book and we'll schedule extra time. We offer noise-cancelling headphones, a weighted blanket, nitrous oxide and oral sedation. You can raise your hand to pause at any time." } },
+        { "@type": "Question", "name": "Do you offer payment plans?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. We accept CareCredit and Sunbit, with 0% financing on treatment over $500 for qualified patients, and all major cards and HSA/FSA cards." } },
+        { "@type": "Question", "name": "¿Hablan español?", "acceptedAnswer": { "@type": "Answer", "text": "¡Sí! La Dra. Márquez y gran parte de nuestro equipo hablan español. Llámenos al (602) 555-0163." } }
+      ]
+    }
+  ]
+}
+</script>
+
+<style>
+@font-face{font-family:"Bricolage";src:url(fonts/bricolage-latin.woff2) format("woff2");font-weight:200 800;font-stretch:75% 100%;font-display:swap;unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"Bricolage";src:url(fonts/bricolage-latin-ext.woff2) format("woff2");font-weight:200 800;font-stretch:75% 100%;font-display:swap;unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:"JB Mono";src:url(fonts/jetbrains-mono-latin.woff2) format("woff2");font-weight:400 700;font-display:swap}
+
+:root{
+  --sand:#f4ede3; --paper:#fbf8f3; --dune:#e9dccb; --line:#ddcfbd;
+  --ink:#122a2d; --ink-2:#3f5457; --muted:#5a6a6b;
+  --teal:#0b6b7d; --teal-d:#08525f; --sun:#e7b07a; --clay:#a94a22; --sage:#7f9a83;
+  --night:#0a1c1f; --night-2:#10292d; --scan:#5eead4; --scan-dim:#2a8f83;
+  --f:"Bricolage","Avenir Next","Segoe UI",system-ui,sans-serif;
+  --mono:"JB Mono",ui-monospace,Menlo,Consolas,monospace;
+  --r:18px; --ease:cubic-bezier(.2,.8,.2,1);
+  --wrap:min(1240px,100% - 32px);
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-padding-top:84px}
+body{margin:0;background:var(--sand);color:var(--ink);font:400 17px/1.6 var(--f);font-optical-sizing:auto;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+img,svg{display:block;max-width:100%}
+img{height:auto}
+a{color:inherit}
+button,input,select,textarea{font:inherit;color:inherit}
+h1,h2,h3{margin:0;font-weight:700;line-height:1.02;letter-spacing:-.025em;text-wrap:balance}
+p{margin:0}
+ul,ol{margin:0;padding:0;list-style:none}
+.wrap{width:var(--wrap);margin-inline:auto}
+.skip{position:absolute;left:12px;top:-60px;z-index:100;background:var(--ink);color:#fff;padding:10px 16px;border-radius:10px;text-decoration:none}
+.skip:focus{top:12px}
+:focus-visible{outline:2.5px solid var(--teal);outline-offset:3px;border-radius:6px}
+[hidden]{display:none!important}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+
+.kicker{font:500 12px/1 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--teal-d);display:flex;align-items:center;gap:10px}
+.kicker::before{content:"";width:22px;height:1.5px;background:currentColor}
+.h2{font-size:clamp(34px,4.6vw,64px);margin-top:18px}
+.sub{color:var(--ink-2);font-size:18px;max-width:34em;margin-top:18px}
+.section{padding:clamp(80px,11vw,150px) 0}
+
+/* buttons */
+.btn{--bg:var(--ink);--fg:#fff;display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 26px;border-radius:999px;background:var(--bg);color:var(--fg);border:0;font-weight:600;font-size:16px;text-decoration:none;cursor:pointer;transition:transform .4s var(--ease),background .3s,box-shadow .4s var(--ease);white-space:nowrap}
+.btn:hover{transform:translateY(-2px);box-shadow:0 14px 30px -16px rgba(18,42,45,.6)}
+.btn--teal{--bg:var(--teal)}
+.btn--teal:hover{--bg:var(--teal-d)}
+.btn--ghost{--bg:transparent;--fg:var(--ink);box-shadow:inset 0 0 0 1.5px var(--ink)}
+.btn--ghost:hover{--bg:var(--ink);--fg:#fff}
+.btn--light{--bg:var(--paper);--fg:var(--ink)}
+.btn--line-light{--bg:transparent;--fg:#fff;box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.55)}
+.btn--sm{min-height:42px;padding:0 18px;font-size:15px}
+.btn--block{width:100%}
+.btn .arr{transition:transform .4s var(--ease)}
+.btn:hover .arr{transform:translateX(4px)}
+.link{font-weight:600;color:var(--teal-d);text-decoration:none;background:linear-gradient(currentColor,currentColor) 0 100%/100% 1.5px no-repeat;padding-bottom:2px;transition:background-size .4s var(--ease)}
+.link:hover{background-size:0 1.5px;background-position:100% 100%}
+
+/* topbar + nav */
+.topbar{background:var(--ink);color:#e9efee;font-size:13.5px}
+.topbar__in{display:flex;justify-content:space-between;align-items:center;gap:16px;min-height:38px}
+.status{display:flex;align-items:center;gap:9px}
+.dot{width:8px;height:8px;border-radius:50%;background:#e8a37a;flex:none}
+.dot.open{background:#6ee7b7;box-shadow:0 0 0 0 rgba(110,231,183,.6);animation:ping 2.4s infinite}
+@keyframes ping{70%{box-shadow:0 0 0 8px rgba(110,231,183,0)}100%{box-shadow:0 0 0 0 rgba(110,231,183,0)}}
+.topbar__r{display:flex;gap:20px;align-items:center}
+.topbar__r a{text-decoration:none;font-weight:600}
+@media (max-width:640px){.topbar__es,.topbar__r a{display:none}}
+
+.nav{position:sticky;top:0;z-index:50;background:rgba(244,237,227,.86);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid transparent;transition:border-color .3s}
+.nav.scrolled{border-color:var(--line)}
+.nav__in{display:flex;align-items:center;gap:28px;min-height:72px}
+.brand{display:flex;align-items:center;gap:11px;text-decoration:none;margin-right:auto}
+.brand svg{width:40px;height:40px}
+.brand b{display:block;font-size:19px;letter-spacing:-.02em;line-height:1}
+.brand small{display:block;font:500 10px/1 var(--mono);letter-spacing:.16em;color:var(--muted);margin-top:5px}
+.nav__links{display:flex;gap:26px}
+.nav__links a{text-decoration:none;font-size:15px;font-weight:500;position:relative}
+.nav__links a::after{content:"";position:absolute;left:0;right:0;bottom:-4px;height:1.5px;background:currentColor;transform:scaleX(0);transform-origin:right;transition:transform .4s var(--ease)}
+.nav__links a:hover::after{transform:scaleX(1);transform-origin:left}
+.nav__toggle{display:none;width:44px;height:44px;border:0;background:none;cursor:pointer;position:relative}
+.nav__toggle span{position:absolute;left:11px;right:11px;height:2px;background:var(--ink);transition:transform .35s var(--ease)}
+.nav__toggle span:first-child{top:17px}.nav__toggle span:last-child{top:25px}
+.nav__toggle[aria-expanded=true] span:first-child{transform:translateY(4px) rotate(45deg)}
+.nav__toggle[aria-expanded=true] span:last-child{transform:translateY(-4px) rotate(-45deg)}
+.mmenu{border-top:1px solid var(--line);padding:10px 16px 20px}
+.mmenu a{display:block;padding:13px 0;font-size:20px;font-weight:600;text-decoration:none;border-bottom:1px solid var(--line)}
+@media (max-width:960px){.nav__links,.nav .btn{display:none}.nav__toggle{display:block}}
+
+/* hero */
+.hero{position:relative;padding:clamp(40px,6vw,84px) 0 clamp(70px,8vw,110px);overflow:hidden}
+.hero__grid{display:grid;grid-template-columns:1.08fr .92fr;gap:clamp(30px,5vw,80px);align-items:center}
+.hero h1{font-size:clamp(46px,7.4vw,112px);font-weight:700;font-stretch:92%;letter-spacing:-.04em;line-height:.95;margin-top:22px}
+.hero h1 .w{display:inline-block;overflow:hidden;vertical-align:top;padding-bottom:.08em;margin-bottom:-.08em}
+.hero h1 .w>span{display:inline-block}
+.js .hero h1 .w>span{animation:rise 1.1s var(--ease) both;animation-delay:calc(var(--i) * 70ms + 80ms)}
+@keyframes rise{from{transform:translateY(105%)}to{transform:none}}
+.hero h1 em{font-style:normal;color:var(--clay);position:relative;display:inline-block}
+.hero h1 em svg{position:absolute;left:-2%;width:104%;bottom:-.1em;height:.24em;overflow:visible}
+.hero h1 em path{fill:none;stroke:var(--sun);stroke-width:7;stroke-linecap:round;stroke-dasharray:420;stroke-dashoffset:0}
+.js .hero h1 em path{animation:draw 1.2s 1s var(--ease) both}
+@keyframes draw{from{stroke-dashoffset:420}}
+.lead{font-size:clamp(18px,1.5vw,21px);color:var(--ink-2);max-width:31em;margin-top:28px}
+.hero__cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
+.proof{display:flex;flex-wrap:wrap;align-items:center;gap:14px 26px;margin-top:38px;padding-top:26px;border-top:1px solid var(--line)}
+.rating{display:flex;align-items:center;gap:12px}
+.rating b{font-size:38px;line-height:1;letter-spacing:-.03em}
+.rating span{display:block;color:#9c5a12;letter-spacing:2px;font-size:14px}
+.rating small{display:block;color:var(--muted);font-size:13.5px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips li{font-size:13.5px;padding:7px 13px;border-radius:999px;background:var(--paper);border:1px solid var(--line)}
+
+.hero__art{position:relative;aspect-ratio:4/5;max-height:680px;justify-self:end;width:100%}
+.hero__sun{position:absolute;width:62%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 40% 35%,#f4c690,var(--sun) 60%,#d9935a);right:-8%;top:-4%;opacity:.9}
+.arch{position:absolute;inset:6% 4% 0 8%;border-radius:999px 999px 26px 26px;overflow:hidden;background:var(--dune);box-shadow:0 40px 80px -40px rgba(18,42,45,.45)}
+.arch img{width:100%;height:100%;object-fit:cover;object-position:58% 30%}
+.js .arch{animation:archIn 1.4s .15s var(--ease) both}
+@keyframes archIn{from{clip-path:inset(100% 0 0 0 round 999px 999px 26px 26px)}to{clip-path:inset(0 0 0 0 round 999px 999px 26px 26px)}}
+.slot{position:absolute;left:-6%;bottom:7%;width:min(300px,78%);background:var(--paper);border-radius:20px;padding:20px 20px 18px;box-shadow:0 30px 60px -28px rgba(18,42,45,.5);border:1px solid var(--line)}
+.js .slot{animation:pop 1s 1.1s var(--ease) both}
+@keyframes pop{from{opacity:0;transform:translateY(24px) scale(.96)}}
+.slot__lbl{font:500 11px/1 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.slot__day{font-size:24px;font-weight:700;letter-spacing:-.02em;margin:8px 0 12px}
+.slot__times{display:flex;gap:7px;flex-wrap:wrap}
+.slot__times a{flex:1;text-align:center;padding:10px 6px;border-radius:12px;background:var(--sand);border:1px solid var(--line);font-size:14px;font-weight:600;text-decoration:none;transition:background .25s,color .25s,border-color .25s}
+.slot__times a:hover{background:var(--teal);border-color:var(--teal);color:#fff}
+.slot__more{display:inline-block;margin-top:12px;font-size:14px;font-weight:600;color:var(--teal-d)}
+.saguaro{position:absolute;bottom:0;right:0;width:12%;fill:none;stroke:var(--sage);stroke-width:11;stroke-linecap:round;stroke-linejoin:round}
+@media (max-width:900px){
+  .hero__grid{grid-template-columns:1fr}
+  .hero__art{justify-self:stretch;max-width:520px;width:100%;margin:10px auto 0}
+  .slot{left:0}
+}
+
+/* offer strip */
+.offer{background:var(--clay);color:#fff}
+.offer__in{display:flex;flex-wrap:wrap;align-items:center;gap:10px 26px;min-height:70px;padding:14px 0}
+.offer__tag{font:500 11.5px/1 var(--mono);letter-spacing:.14em;text-transform:uppercase;padding:7px 11px;border:1px solid rgba(255,255,255,.55);border-radius:999px}
+.offer p{flex:1;min-width:240px}
+.offer b{font-size:22px}
+.offer s{opacity:.85}
+.offer a{font-weight:700;text-decoration:none;white-space:nowrap}
+.offer a:hover{text-decoration:underline}
+
+.trust{border-bottom:1px solid var(--line)}
+.trust__in{display:flex;flex-wrap:wrap;align-items:center;gap:14px 34px;padding:24px 0;color:var(--ink-2);font-weight:600;font-size:15px}
+.trust__in span{font:500 11px/1 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.trust ul{display:flex;flex-wrap:wrap;gap:12px 34px}
+
+/* ======= 3D SCAN ======= */
+.scan{background:var(--night);color:#e6f1ef;position:relative}
+.scan__pin{min-height:100vh;display:flex;align-items:center;padding:clamp(70px,9vw,110px) 0;position:relative;overflow:hidden}
+.scan__pin::before{content:"";position:absolute;inset:0;background:radial-gradient(60% 60% at 70% 50%,rgba(94,234,212,.09),transparent 70%),linear-gradient(rgba(94,234,212,.05) 1px,transparent 1px) 0 0/100% 48px,linear-gradient(90deg,rgba(94,234,212,.05) 1px,transparent 1px) 0 0/48px 100%;pointer-events:none}
+.scan__grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(24px,5vw,70px);align-items:center;position:relative}
+.scan .kicker{color:var(--scan)}
+.scan .h2{color:#fff}
+.scan .sub{color:#a9c1bd}
+.steps{margin-top:40px;display:grid;gap:4px;counter-reset:s}
+.steps li{position:relative;padding:16px 0;border-top:1px solid rgba(94,234,212,.16);transition:opacity .5s}
+.steps li:last-child{border-bottom:1px solid rgba(94,234,212,.16)}
+.steps .n{display:block;font:500 12px/1 var(--mono);color:var(--scan);letter-spacing:.1em;text-transform:uppercase;margin-bottom:8px}
+.steps h3{font-size:24px;letter-spacing:-.02em;color:#fff}
+.steps p{color:#a9c1bd;margin-top:6px;max-width:30em}
+.steps .bar{position:absolute;left:0;bottom:-1px;height:2px;width:0;background:var(--scan)}
+.js-scan .steps li{opacity:.55}
+.js-scan .steps li.on{opacity:1}
+.js-scan .steps p{display:grid;grid-template-rows:0fr;margin-top:0;transition:grid-template-rows .6s var(--ease),margin .6s var(--ease)}
+.js-scan .steps p>span{overflow:hidden}
+.js-scan .steps li.on p{grid-template-rows:1fr;margin-top:6px}
+@media (min-width:901px){
+  .js-scan .scan__pin{height:100vh;min-height:620px;padding:96px 0 34px}
+  .js-scan .scan__grid{height:100%}
+  .js-scan .stage{max-height:calc(100vh - 150px);max-width:calc(100vh - 150px)}
+  .js-scan .scan .h2{font-size:clamp(34px,4.4vh,56px)}
+  .js-scan .steps{margin-top:26px}
+}
+.scan__cta{margin-top:32px;display:flex;flex-wrap:wrap;gap:12px}
+.btn--scan{--bg:var(--scan);--fg:var(--night)}
+.btn--scan:hover{--bg:#99f6e4}
+
+.stage{position:relative;aspect-ratio:1;max-height:min(78vh,700px);width:100%;justify-self:center}
+.stage canvas{position:absolute;inset:0;width:100%!important;height:100%!important;opacity:0;transition:opacity 1s}
+.stage.ready canvas{opacity:1}
+.stage__fallback{position:absolute;inset:8% 14%;transition:opacity .8s}
+.stage.ready .stage__fallback{opacity:0}
+.stage__ring{position:absolute;inset:6%;border-radius:50%;border:1px dashed rgba(94,234,212,.22)}
+.stage__ring::after{content:"";position:absolute;inset:9%;border-radius:50%;border:1px solid rgba(94,234,212,.1)}
+.hud{position:absolute;font:500 11.5px/1.5 var(--mono);letter-spacing:.08em;color:#8fd9cc;text-transform:uppercase}
+.hud b{color:#fff;font-weight:500}
+.hud--tl{left:0;top:0}
+.hud--tr{right:0;top:0;text-align:right}
+.hud--bl{left:0;bottom:0;width:44%}
+.hud--br{right:0;bottom:0;text-align:right}
+.hud .meter{height:3px;background:rgba(94,234,212,.18);margin-top:8px;border-radius:2px;overflow:hidden}
+.hud .meter i{display:block;height:100%;width:var(--p,100%);background:var(--scan)}
+.corner{position:absolute;width:22px;height:22px;border-color:rgba(94,234,212,.6);border-style:solid}
+.corner--a{left:-8px;top:-8px;border-width:1.5px 0 0 1.5px}.corner--b{right:-8px;top:-8px;border-width:1.5px 1.5px 0 0}
+.corner--c{left:-8px;bottom:-8px;border-width:0 0 1.5px 1.5px}.corner--d{right:-8px;bottom:-8px;border-width:0 1.5px 1.5px 0}
+.shades{display:flex;gap:6px;justify-content:flex-end;margin-top:8px}
+.shades i{width:28px;height:34px;border-radius:6px 6px 10px 10px;position:relative;font-style:normal;font-size:10px;color:var(--night);display:grid;place-items:end center;padding-bottom:3px;outline:1.5px solid transparent;outline-offset:2px;transition:outline-color .3s,transform .3s var(--ease)}
+.shades i.on{outline-color:var(--scan);transform:translateY(-3px)}
+.tag{position:absolute;font:500 11px/1.3 var(--mono);letter-spacing:.06em;color:#dff7f2;text-transform:uppercase;display:flex;align-items:center;gap:8px;opacity:0;transform:translateX(-8px);transition:opacity .5s,transform .5s var(--ease);white-space:nowrap}
+.tag::before{content:"";width:46px;height:1px;background:var(--scan);flex:none}
+.tag--r{flex-direction:row-reverse}
+.tag--r{transform:translateX(8px)}
+.tag small{display:block;color:#8fd9cc}
+.stage.tags .tag{opacity:1;transform:none}
+.quote{position:absolute;left:50%;bottom:9%;transform:translate(-50%,20px);width:min(330px,88%);background:rgba(16,41,45,.86);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border:1px solid rgba(94,234,212,.35);border-radius:16px;padding:16px 18px;opacity:0;transition:opacity .5s,transform .6s var(--ease);pointer-events:none}
+.stage.priced .quote{opacity:1;transform:translate(-50%,0);pointer-events:auto}
+.quote__row{display:flex;justify-content:space-between;gap:12px;font-size:15px;padding:5px 0;color:#cfe3df}
+.quote__row b{color:#fff}
+.quote__row--t{border-top:1px dashed rgba(94,234,212,.35);margin-top:6px;padding-top:10px;font-size:17px}
+.quote__lbl{font:500 10.5px/1 var(--mono);letter-spacing:.14em;color:var(--scan);text-transform:uppercase;margin-bottom:8px}
+@media (max-width:900px){
+  .scan__grid{grid-template-columns:1fr}
+  .stage{order:-1;max-height:none;max-width:520px;margin:0 auto}
+  .js-scan .scan__pin{padding:88px 0 28px;align-items:flex-start}
+  .js-scan .stage{width:min(100%,46vh)}
+  .js-scan .steps{margin-top:18px}
+  .js-scan .steps li{display:none;border:0;padding-top:4px}
+  .js-scan .steps li.on{display:block}
+  .js-scan .scan .h2,.js-scan .scan__copy .sub{display:none}
+  .js-scan .scan__cta{margin-top:14px}
+  .tag::before{width:22px}
+  .hud{font-size:10px}
+  .shades i{width:22px;height:28px}
+}
+
+/* services */
+.svc-head{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:end}
+.svc-list{margin-top:56px;border-top:1px solid var(--line)}
+.svc{display:grid;grid-template-columns:70px 1.1fr 1.4fr 140px;gap:20px;align-items:baseline;padding:26px 0;border-bottom:1px solid var(--line);position:relative;transition:padding .5s var(--ease)}
+.svc::before{content:"";position:absolute;inset:0 -16px;background:var(--paper);border-radius:14px;opacity:0;transform:scaleY(.6);transition:opacity .4s,transform .5s var(--ease);z-index:-1}
+.svc:hover::before{opacity:1;transform:none}
+.svc__n{font:500 13px/1 var(--mono);color:var(--muted)}
+.svc h3{font-size:clamp(22px,2.2vw,30px)}
+.svc p{color:var(--ink-2)}
+.svc__p{text-align:right;font-weight:600;white-space:nowrap}
+.svc__p small{display:block;font:500 11px/1.4 var(--mono);color:var(--muted);letter-spacing:.06em;text-transform:uppercase}
+.svc--urgent h3{color:var(--clay)}
+.svc--urgent a{font-weight:700;color:var(--clay)}
+.list-note{margin-top:18px;font-size:14px;color:var(--muted)}
+@media (max-width:860px){
+  .svc-head{grid-template-columns:1fr}
+  .svc{grid-template-columns:44px 1fr auto;gap:6px 14px}
+  .svc p{grid-column:2/-1;font-size:15.5px}
+  .svc__p{grid-row:1;grid-column:3}
+}
+
+/* features */
+.feats{display:grid;gap:clamp(70px,9vw,130px)}
+.feat{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,6vw,96px);align-items:center}
+.feat--flip .feat__img{order:2}
+.feat__img{border-radius:var(--r);overflow:hidden;aspect-ratio:5/4;background:var(--dune)}
+.feat__img--arch{border-radius:999px 999px var(--r) var(--r);aspect-ratio:4/5;max-width:460px}
+.feat__img img{width:100%;height:100%;object-fit:cover;transform:scale(1.08)}
+.ticks{display:flex;flex-wrap:wrap;gap:8px;margin-top:24px}
+.ticks li{padding:8px 14px;border-radius:999px;border:1px solid var(--line);background:var(--paper);font-size:14.5px}
+.feat .link{display:inline-block;margin-top:26px}
+@media (max-width:860px){.feat{grid-template-columns:1fr}.feat--flip .feat__img{order:0}.feat__img--arch{max-width:none;aspect-ratio:5/4;border-radius:var(--r)}}
+
+/* insurance + estimator + plan (sand band) */
+.band{background:var(--paper);border-block:1px solid var(--line)}
+.ins{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,6vw,90px);align-items:start}
+.ins__box{background:var(--sand);border:1px solid var(--line);border-radius:22px;padding:28px}
+.lbl{display:block;font:500 11.5px/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:10px}
+select,input,textarea{width:100%;min-height:52px;border-radius:14px;border:1.5px solid var(--line);background:var(--paper);padding:12px 16px;font-size:16px;transition:border-color .25s,box-shadow .25s}
+select{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%23122a2d' stroke-width='1.6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 16px center;background-size:12px;padding-right:44px;cursor:pointer}
+select:focus,input:focus,textarea:focus{outline:none;border-color:var(--teal);box-shadow:0 0 0 4px rgba(11,107,125,.15)}
+textarea{min-height:90px;resize:vertical}
+.ins__out{margin-top:16px;min-height:10px}
+.msg{display:flex;gap:14px;padding:18px;border-radius:16px;background:var(--paper);border:1px solid var(--line);animation:pop .6s var(--ease)}
+.msg i{flex:none;width:34px;height:34px;border-radius:50%;display:grid;place-items:center;font-style:normal;font-weight:700;color:#fff;background:var(--teal)}
+.msg--mid i{background:#9c5a12}.msg--info i{background:var(--ink)}
+.msg p{color:var(--ink-2);font-size:15.5px;margin-top:4px}
+.msg a{color:var(--teal-d);font-weight:600}
+
+.est{margin-top:clamp(70px,9vw,120px);display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(30px,5vw,70px);align-items:start}
+.est__items{margin-top:28px;display:grid;gap:8px}
+.est__item{display:grid;grid-template-columns:auto 1fr auto;gap:14px;align-items:center;padding:14px 16px;border-radius:14px;border:1.5px solid var(--line);background:var(--sand);cursor:pointer;transition:border-color .25s,background .25s}
+.est__item:has(input:checked){border-color:var(--teal);background:#eef4f2}
+.est__item input{width:20px;height:20px;min-height:0;accent-color:var(--teal);margin:0}
+.est__item b{font-weight:600}
+.est__item small{display:block;color:var(--muted);font-size:13.5px}
+.est__item .fee{font:500 14px/1 var(--mono)}
+.qty{display:inline-flex;align-items:center;gap:6px;margin-top:6px}
+.qty button{width:28px;height:28px;border-radius:50%;border:1.5px solid var(--line);background:var(--paper);cursor:pointer;font-weight:700;line-height:1}
+.qty output{font:500 14px/1 var(--mono);min-width:16px;text-align:center}
+.est__cols{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.col{border-radius:20px;padding:22px 20px;background:var(--sand);border:1.5px solid var(--line);position:relative;transition:border-color .3s,transform .5s var(--ease),box-shadow .5s var(--ease)}
+.col.best{border-color:var(--teal);box-shadow:0 26px 50px -30px rgba(11,107,125,.6);transform:translateY(-4px)}
+.col.best::after{content:"Lowest for you";position:absolute;top:-11px;left:18px;background:var(--teal);color:#fff;font:500 10.5px/1 var(--mono);letter-spacing:.1em;text-transform:uppercase;padding:6px 9px;border-radius:999px}
+.col.mine{outline:2px dashed var(--sun);outline-offset:4px}
+.col h3{font-size:16px;letter-spacing:-.01em}
+.col .amt{font-size:clamp(32px,3.4vw,46px);font-weight:700;letter-spacing:-.04em;margin-top:14px;font-variant-numeric:tabular-nums}
+.col .amt small{font-size:15px;font-weight:500;letter-spacing:0;color:var(--muted)}
+.col .bar{height:6px;border-radius:3px;background:var(--dune);margin-top:14px;overflow:hidden}
+.col .bar i{display:block;height:100%;width:0;background:var(--ink);border-radius:3px;transition:width .8s var(--ease)}
+.col.best .bar i{background:var(--teal)}
+.col p{font-size:13.5px;color:var(--muted);margin-top:12px;line-height:1.45}
+.est__foot{display:flex;flex-wrap:wrap;gap:12px 20px;align-items:center;justify-content:space-between;margin-top:22px}
+.est__foot p{font-size:13.5px;color:var(--muted);max-width:36em}
+@media (max-width:960px){.ins,.est{grid-template-columns:1fr}}
+@media (max-width:620px){.est__cols{grid-template-columns:1fr}.col{display:grid;grid-template-columns:1fr auto;align-items:center;gap:0 12px;padding:16px 18px}.col .amt{margin:0;grid-row:1/3;grid-column:2;font-size:30px}.col .bar{grid-column:1}.col p{grid-column:1/-1;margin-top:8px}}
+
+.plan{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(30px,6vw,90px);align-items:center}
+.toggle{display:inline-flex;padding:5px;border-radius:999px;background:var(--dune);margin-top:30px;position:relative}
+.toggle button{position:relative;z-index:1;border:0;background:none;padding:11px 20px;border-radius:999px;font-weight:600;cursor:pointer;transition:color .3s}
+.toggle button.on{color:#fff}
+.toggle .pill{position:absolute;top:5px;bottom:5px;left:5px;border-radius:999px;background:var(--ink);transition:transform .5s var(--ease),width .5s var(--ease)}
+.card{background:var(--ink);color:#e9efee;border-radius:26px;padding:clamp(28px,3vw,40px);position:relative;overflow:hidden}
+.card::before{content:"";position:absolute;width:280px;height:280px;border-radius:50%;background:var(--sun);opacity:.16;right:-90px;top:-110px}
+.price{display:flex;align-items:flex-start;gap:4px;color:#fff;position:relative}
+.price span{font-size:28px;margin-top:10px}
+.price b{font-size:96px;line-height:1;letter-spacing:-.05em;font-variant-numeric:tabular-nums}
+.price small{align-self:flex-end;margin-bottom:14px;font-size:16px;color:#b7c8c6}
+.card .yr{color:#b7c8c6;margin-top:6px}
+.card ul{margin:24px 0 26px;display:grid;gap:10px}
+.card li{display:flex;gap:12px;align-items:baseline}
+.card li::before{content:"";flex:none;width:14px;height:8px;border-left:2px solid var(--scan);border-bottom:2px solid var(--scan);transform:rotate(-45deg) translateY(-3px)}
+.card .note{font-size:14px;color:#b7c8c6;margin-top:16px}
+.card .note b{color:#fff}
+@media (max-width:860px){.plan{grid-template-columns:1fr}}
+
+/* team */
+.team-head{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:end}
+.team-head blockquote{margin:0;font-size:clamp(19px,1.7vw,23px);line-height:1.45;color:var(--ink-2);font-weight:500}
+.team-head cite{display:block;font:500 12px/1 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-top:14px;font-style:normal}
+.team{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(14px,2vw,26px);margin-top:56px}
+.member__img{border-radius:999px 999px 16px 16px;overflow:hidden;aspect-ratio:4/5;background:var(--dune)}
+.member__img img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease)}
+.member:hover .member__img img{transform:scale(1.05)}
+.member figcaption{margin-top:16px}
+.member b{display:block;font-size:18px;letter-spacing:-.01em}
+.member span{display:block;color:var(--ink-2);font-size:15px}
+.member small{display:block;color:var(--muted);font-size:13.5px;margin-top:4px}
+figure{margin:0}
+@media (max-width:960px){.team{grid-template-columns:repeat(2,1fr)}.team-head{grid-template-columns:1fr}}
+
+/* reviews */
+.revs{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:50px}
+.rev{background:var(--paper);border:1px solid var(--line);border-radius:22px;padding:28px;display:flex;flex-direction:column;justify-content:space-between;gap:26px}
+.rev:nth-child(2){background:var(--ink);color:#e9efee;border-color:var(--ink)}
+.rev blockquote{margin:0;font-size:19px;line-height:1.5;font-weight:500}
+.rev .st{color:#9c5a12;letter-spacing:2px;font-size:14px;margin-bottom:14px}
+.rev:nth-child(2) .st{color:var(--sun)}
+.rev figcaption{font:500 12px/1 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.rev:nth-child(2) figcaption{color:#b7c8c6}
+@media (max-width:860px){.revs{grid-template-columns:1fr}}
+
+/* booking */
+.book{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(30px,6vw,90px);align-items:start}
+.call{margin-top:32px;padding:22px;border-radius:18px;border:1px solid var(--line);background:var(--sand)}
+.call span{display:block;color:var(--muted);font-size:14px}
+.call a{display:block;font-size:30px;font-weight:700;letter-spacing:-.02em;text-decoration:none;margin:4px 0}
+.call small{color:var(--muted)}
+.call .wa{display:inline-flex;align-items:center;gap:8px;margin-top:12px;font-size:15px;font-weight:600;color:var(--teal-d)}
+.wiz{background:var(--sand);border:1px solid var(--line);border-radius:26px;padding:clamp(22px,3vw,36px);position:relative}
+.wiz__top{display:flex;align-items:center;gap:16px;margin-bottom:24px}
+.wiz__count{font:500 12px/1 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--muted);white-space:nowrap}
+.wiz__bar{flex:1;height:4px;background:var(--dune);border-radius:2px;overflow:hidden}
+.wiz__bar i{display:block;height:100%;width:25%;background:var(--teal);transition:width .6s var(--ease)}
+fieldset{border:0;margin:0;padding:0;min-width:0}
+.step{display:none}
+.step.on{display:block;animation:pop .5s var(--ease)}
+legend{font-size:clamp(22px,2.2vw,28px);font-weight:700;letter-spacing:-.02em;margin-bottom:20px;padding:0}
+.opts{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.opt{position:relative;cursor:pointer}
+.opt input{position:absolute;opacity:0;width:1px;height:1px;min-height:0}
+.opt span{display:block;padding:16px 18px;border-radius:14px;border:1.5px solid var(--line);background:var(--paper);font-weight:600;transition:border-color .2s,background .2s,box-shadow .2s;height:100%}
+.opt small{display:block;font-weight:400;color:var(--muted);font-size:14px;margin-top:2px}
+.opt:hover span{border-color:var(--ink-2)}
+.opt input:checked+span{border-color:var(--teal);background:#eef4f2;box-shadow:inset 0 0 0 1px var(--teal)}
+.opt input:focus-visible+span{outline:2.5px solid var(--teal);outline-offset:2px}
+.field{display:block;margin-top:14px}
+.field>span{display:block;font-size:14px;font-weight:600;margin-bottom:6px}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.days{display:flex;gap:8px;overflow-x:auto;padding:2px 2px 10px;scrollbar-width:thin}
+.day{flex:none;width:72px;padding:12px 0;border-radius:14px;border:1.5px solid var(--line);background:var(--paper);cursor:pointer;text-align:center;transition:border-color .2s,background .2s,color .2s}
+.day small{display:block;font:500 11px/1 var(--mono);text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+.day b{display:block;font-size:24px;line-height:1.2;margin-top:4px}
+.day span{display:block;font-size:12.5px;color:var(--muted)}
+.day.on{background:var(--ink);border-color:var(--ink);color:#fff}
+.day.on small,.day.on span{color:#b7c8c6}
+.times{display:grid;grid-template-columns:repeat(auto-fill,minmax(102px,1fr));gap:8px;margin-top:14px}
+.time{padding:12px 6px;border-radius:12px;border:1.5px solid var(--line);background:var(--paper);font-weight:600;font-size:15px;cursor:pointer;transition:border-color .2s,background .2s,color .2s}
+.time:hover:not(:disabled){border-color:var(--ink-2)}
+.time.on{background:var(--teal);border-color:var(--teal);color:#fff}
+.time:disabled{opacity:.45;text-decoration:line-through;cursor:not-allowed}
+.recap{margin-top:16px;padding:16px;border-radius:14px;background:var(--paper);border:1px dashed var(--line);font-size:15px;color:var(--ink-2)}
+.recap b{color:var(--ink)}
+.err{display:none;color:#a0291d;font-size:14.5px;font-weight:600;margin-top:12px}
+.err.on{display:block}
+input.bad{border-color:#a0291d}
+.wiz__nav{display:flex;justify-content:space-between;gap:12px;margin-top:26px}
+.wiz__nav .btn:last-child,.wiz__nav #next{margin-left:auto}
+.btn--text{--bg:transparent;--fg:var(--ink-2);padding:0 6px}
+.btn--text:hover{box-shadow:none;--fg:var(--ink)}
+.done{text-align:center;padding:30px 0 10px}
+.done__check{width:70px;height:70px;border-radius:50%;background:var(--teal);color:#fff;display:grid;place-items:center;font-size:30px;margin:0 auto 18px;animation:pop .7s var(--ease)}
+.done h3{font-size:30px}
+.done p{color:var(--ink-2);margin:10px auto 0;max-width:30em}
+.done .fine{font-size:13.5px;color:var(--muted)}
+.done .btn{margin-top:22px}
+.wiz.is-done .wiz__nav,.wiz.is-done .wiz__top{display:none}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.book>*,.ins>*,.est>*,.plan>*,.faq>*,.visit__grid>*{min-width:0}
+@media (max-width:860px){.book{grid-template-columns:1fr}}
+@media (max-width:520px){.opts,.row{grid-template-columns:1fr}}
+
+/* faq */
+.faq{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(30px,6vw,90px)}
+.faq details{border-bottom:1px solid var(--line)}
+.faq details:first-child{border-top:1px solid var(--line)}
+.faq summary{list-style:none;cursor:pointer;padding:24px 44px 24px 0;font-size:clamp(18px,1.6vw,21px);font-weight:600;position:relative}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"";position:absolute;right:6px;top:50%;width:16px;height:16px;margin-top:-8px;background:linear-gradient(var(--ink),var(--ink)) center/100% 2px no-repeat,linear-gradient(var(--ink),var(--ink)) center/2px 100% no-repeat;transition:transform .4s var(--ease)}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq details p{color:var(--ink-2);padding:0 0 24px;max-width:40em}
+@media (max-width:860px){.faq{grid-template-columns:1fr}}
+
+/* visit */
+.visit{background:var(--ink);color:#e9efee;position:relative;overflow:hidden}
+.visit__grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,6vw,90px);align-items:center;position:relative}
+.visit .kicker{color:var(--sun)}
+.visit .h2{color:#fff}
+.addr{margin-top:22px;font-size:18px;color:#cddbd9}
+.visit__cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.hours{width:100%;border-collapse:collapse;font-size:16px}
+.hours th,.hours td{padding:15px 0;border-bottom:1px solid rgba(255,255,255,.12);text-align:left;font-weight:500}
+.hours td{text-align:right;color:#cddbd9;font-variant-numeric:tabular-nums}
+.hours tr.today th,.hours tr.today td{color:var(--sun);font-weight:700}
+.hours tr.today th::after{content:"Today";margin-left:10px;font:500 10.5px/1 var(--mono);letter-spacing:.1em;text-transform:uppercase;padding:4px 7px;border-radius:999px;background:var(--sun);color:var(--ink);vertical-align:2px}
+.ridge{position:absolute;left:0;right:0;bottom:-1px;width:100%;height:auto;fill:#183a3e;pointer-events:none}
+@media (max-width:860px){.visit__grid{grid-template-columns:1fr}}
+
+/* footer */
+.foot{background:var(--night);color:#a9c1bd;padding:60px 0 40px;font-size:14.5px}
+.foot__grid{display:grid;grid-template-columns:1.2fr 1fr 1.4fr;gap:30px}
+.foot strong{display:block;color:#fff;font-size:20px;letter-spacing:-.02em}
+.foot nav{display:flex;flex-wrap:wrap;gap:10px 22px}
+.foot a{color:#e6f1ef}
+.foot nav a{text-decoration:none}
+.foot nav a:hover{text-decoration:underline}
+.foot__note p+p{margin-top:10px}
+.foot__mark{width:100%;height:auto;margin-top:50px;overflow:visible}.foot__mark text{font-family:var(--f);font-size:172px;font-weight:800;letter-spacing:-.05em;fill:#14302f;font-stretch:80%}
+@media (max-width:860px){.foot__grid{grid-template-columns:1fr}.foot{padding-bottom:110px}}
+
+/* mobile bar + to top */
+.mbar{display:none}
+@media (max-width:767px){
+  .mbar{position:fixed;z-index:40;left:10px;right:10px;bottom:calc(10px + env(safe-area-inset-bottom));display:grid;grid-template-columns:1fr 1fr 1.4fr;gap:6px;padding:6px;border-radius:999px;background:rgba(18,42,45,.94);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);transform:translateY(160%);transition:transform .5s var(--ease)}
+  .mbar.on{transform:none}
+  .mbar a{display:flex;align-items:center;justify-content:center;min-height:46px;border-radius:999px;color:#fff;font-weight:600;font-size:14.5px;text-decoration:none}
+  .mbar .b{background:var(--teal)}
+}
+.totop{position:fixed;right:20px;bottom:20px;z-index:45;width:52px;height:52px;border-radius:50%;border:0;background:var(--teal);color:#fff;cursor:pointer;opacity:0;pointer-events:none;transform:translateY(16px) scale(.9);transition:opacity .5s,transform .5s var(--ease),bottom .5s var(--ease),background .3s;box-shadow:0 14px 30px -12px rgba(18,42,45,.6);padding:0}
+.totop.on{opacity:1;pointer-events:auto;transform:none}
+.totop:hover{background:var(--ink)}
+.totop svg{width:100%;height:100%;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.totop .ring{stroke:rgba(255,255,255,.9);stroke-dasharray:150.8;stroke-dashoffset:calc(150.8 * (1 - var(--pg,0)));transform:rotate(-90deg);transform-origin:50% 50%}
+@media (max-width:767px){.totop{width:46px;height:46px;right:14px;bottom:calc(14px + env(safe-area-inset-bottom))}.mbar.on~.totop{bottom:calc(76px + env(safe-area-inset-bottom))}}
+
+/* reveal */
+.js [data-r]{opacity:0;transform:translateY(28px);transition:opacity 1s var(--ease),transform 1.1s var(--ease)}
+.js [data-r].in{opacity:1;transform:none}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;animation-delay:0s!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
+  .js [data-r]{opacity:1;transform:none}
+  .feat__img img{transform:none}
+}
+</style>
+<script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
-  <a class="skip" href="#main">Skip to content</a>
+<a class="skip" href="#main">Skip to content</a>
 
-  <div class="topbar">
-    <div class="wrap topbar__inner">
-      <span class="topbar__status"><i class="pulse-dot" id="openDot"></i><span id="openText">Checking today's hours…</span></span>
-      <span class="topbar__right">
-        <span class="topbar__es">Se habla español</span>
-        <a href="tel:+16025550163">(602) 555-0163</a>
-      </span>
+<div class="topbar">
+  <div class="wrap topbar__in">
+    <span class="status"><i class="dot" id="openDot"></i><span id="openText">Mon–Thu 7–5 · Fri 7–2 · Sat 8–12</span></span>
+    <span class="topbar__r"><span class="topbar__es">Se habla español</span><a href="tel:+16025550163">(602) 555-0163</a></span>
+  </div>
+</div>
+
+<header class="nav" id="top">
+  <div class="wrap nav__in">
+    <a href="#top" class="brand" aria-label="Cactus Wren Dental, home">
+      <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M7 44V25a17 17 0 0 1 34 0v19z" fill="#0b6b7d"/><path d="M7 44v-7.5c5.7-2.6 11.3-3.2 17-2.2s11.3 2.2 17 .2V44z" fill="#e7b07a"/><path d="M24 17.6C22.9 17.6 22.2 16.6 20.4 16.6C17.6 16.6 15.8 18.8 15.8 21.6C15.8 23.6 16.5 24.8 17 26.4C17.7 28.8 17.9 31.6 18.6 34.4C18.9 35.7 19.4 36.8 20.3 36.8C21.6 36.8 21.7 34.4 22.2 32.4C22.5 31.3 23.1 30.6 24 30.6C24.9 30.6 25.5 31.3 25.8 32.4C26.3 34.4 26.4 36.8 27.7 36.8C28.6 36.8 29.1 35.7 29.4 34.4C30.1 31.6 30.3 28.8 31 26.4C31.5 24.8 32.2 23.6 32.2 21.6C32.2 18.8 30.4 16.6 27.6 16.6C25.8 16.6 25.1 17.6 24 17.6Z" fill="#fff"/></svg>
+      <span><b>Cactus Wren</b><small>DENTAL · PHOENIX</small></span>
+    </a>
+    <nav class="nav__links" aria-label="Main">
+      <a href="#scan">3D preview</a>
+      <a href="#services">Services &amp; prices</a>
+      <a href="#insurance">Insurance</a>
+      <a href="#team">Team</a>
+      <a href="#visit">Visit</a>
+    </nav>
+    <a href="#book" class="btn btn--teal btn--sm" data-reason="Cleaning & checkup">Book a visit</a>
+    <button class="nav__toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mmenu"><span></span><span></span></button>
+  </div>
+  <div class="mmenu" id="mmenu" hidden>
+    <a href="#scan">3D smile preview</a>
+    <a href="#services">Services &amp; prices</a>
+    <a href="#insurance">Insurance &amp; cost</a>
+    <a href="#plan">No insurance? Smile Plan</a>
+    <a href="#team">Our team</a>
+    <a href="#book">Book a visit</a>
+    <a href="#visit">Hours &amp; location</a>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap hero__grid">
+    <div>
+      <p class="kicker">Family &amp; cosmetic dentist · Arcadia, Phoenix</p>
+      <h1 id="heroTitle">A dentist you’ll <em>actually<svg viewBox="0 0 300 20" preserveAspectRatio="none" aria-hidden="true"><path d="M4 14C60 5 140 3 296 10"/></svg></em> look forward to.</h1>
+      <p class="lead">Gentle care for kids, parents and grandparents under one roof. We show you a 3D scan of your teeth, tell you the exact price before we start, and never rush you out the door.</p>
+      <div class="hero__cta">
+        <a href="#book" class="btn btn--teal" data-reason="Cleaning & checkup">Book a visit <span class="arr" aria-hidden="true">→</span></a>
+        <a href="tel:+16025550163" class="btn btn--ghost">Call (602) 555-0163</a>
+      </div>
+      <div class="proof">
+        <div class="rating"><b>4.9</b><div><span aria-hidden="true">★★★★★</span><small>380+ Google reviews</small></div></div>
+        <ul class="chips"><li>New patients welcome</li><li>Most PPO plans</li><li>Same-day emergencies</li></ul>
+      </div>
+    </div>
+    <div class="hero__art">
+      <div class="hero__sun" aria-hidden="true"></div>
+      <div class="arch"><img src="images/hero-wide.webp" srcset="images/hero-760.webp 760w, images/hero-wide.webp 1400w" sizes="(max-width: 900px) 92vw, 44vw" width="1400" height="1366" alt="Smiling patient talking with her dentist during a checkup" fetchpriority="high"></div>
+      <svg class="saguaro" viewBox="0 0 60 124" aria-hidden="true"><path d="M30 124V16M30 76H18a7 7 0 0 1-7-7V48M30 62h11a7 7 0 0 0 7-7V34"/></svg>
+      <div class="slot">
+        <p class="slot__lbl">Next available</p>
+        <p class="slot__day" id="nextDay">This week</p>
+        <div class="slot__times" id="heroSlots"><a href="#book">See times</a></div>
+        <a href="#book" class="slot__more">All open times →</a>
+      </div>
     </div>
   </div>
+</section>
 
-  <header class="nav" id="top">
-    <div class="wrap nav__inner">
-      <a href="#top" class="brand" aria-label="Cactus Wren Dental, home">
-        <svg class="brand__mark" viewBox="0 0 48 48" aria-hidden="true"><path d="M7 44V25a17 17 0 0 1 34 0v19z" fill="#0e7490"/><path d="M7 44v-7.5c5.7-2.6 11.3-3.2 17-2.2s11.3 2.2 17 .2V44z" fill="#e7b07a"/><path d="M24 17.6C22.9 17.6 22.2 16.6 20.4 16.6C17.6 16.6 15.8 18.8 15.8 21.6C15.8 23.6 16.5 24.8 17 26.4C17.7 28.8 17.9 31.6 18.6 34.4C18.9 35.7 19.4 36.8 20.3 36.8C21.6 36.8 21.7 34.4 22.2 32.4C22.5 31.3 23.1 30.6 24 30.6C24.9 30.6 25.5 31.3 25.8 32.4C26.3 34.4 26.4 36.8 27.7 36.8C28.6 36.8 29.1 35.7 29.4 34.4C30.1 31.6 30.3 28.8 31 26.4C31.5 24.8 32.2 23.6 32.2 21.6C32.2 18.8 30.4 16.6 27.6 16.6C25.8 16.6 25.1 17.6 24 17.6Z" fill="#ffffff"/></svg>
-        <span class="brand__text"><strong>Cactus Wren</strong><span>DENTAL · PHOENIX</span></span>
-      </a>
-      <nav class="nav__links" aria-label="Main">
-        <a href="#services">Services</a>
-        <a href="#insurance">Insurance</a>
-        <a href="#plan">No insurance?</a>
-        <a href="#team">Our team</a>
-        <a href="#visit">Visit</a>
-      </nav>
-      <a href="tel:+16025550163" class="nav__phone">(602) 555-0163</a>
-      <a href="#book" class="btn btn--primary btn--sm nav__cta">Book appointment</a>
-      <button class="nav__toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu"><span></span><span></span></button>
+<section class="offer" aria-label="New patient special">
+  <div class="wrap offer__in">
+    <span class="offer__tag">New patients</span>
+    <p><b>$99</b> exam, full X-rays and cleaning if you don’t have insurance. <s>Regularly $310.</s></p>
+    <a href="#book" data-reason="Cleaning & checkup" data-note="New patient special ($99)">Claim your visit →</a>
+  </div>
+</section>
+
+<section class="trust" aria-label="Memberships and insurance">
+  <div class="wrap trust__in">
+    <span>In-network &amp; certified</span>
+    <ul><li>Invisalign® Provider</li><li>American Dental Association</li><li>Delta Dental</li><li>Cigna</li><li>Aetna</li><li>MetLife</li></ul>
+  </div>
+</section>
+
+<!-- 3D SCAN -->
+<section class="scan" id="scan" aria-labelledby="scanTitle">
+  <div class="scan__pin">
+    <div class="wrap scan__grid">
+      <div class="scan__copy">
+        <p class="kicker">The 3D smile preview · free</p>
+        <h2 class="h2" id="scanTitle">See your new smile before you commit.</h2>
+        <p class="sub">No goopy impressions and no guessing. Scroll to watch a real scan come together.</p>
+        <ol class="steps" id="steps">
+          <li class="on"><span class="n">01 / Scan</span><h3>Two minutes, no goop.</h3><p><span>A small wand captures over 24,000 points per tooth while you sit back. It’s quick, painless and uses no radiation.</span></p><i class="bar"></i></li>
+          <li><span class="n">02 / See</span><h3>Every surface, in front of you.</h3><p><span>Your teeth appear in 3D on the screen by your chair. We point to exactly what we see, from enamel wear to an old filling.</span></p><i class="bar"></i></li>
+          <li><span class="n">03 / Preview</span><h3>Watch your shade change.</h3><p><span>Whitening, veneers or Invisalign: preview the result on your own scan, from A3 to B1, before you decide anything.</span></p><i class="bar"></i></li>
+          <li><span class="n">04 / Price</span><h3>Then an exact price, in writing.</h3><p><span>You leave with a printed quote showing your insurance share. The number on the quote is the number you pay.</span></p><i class="bar"></i></li>
+        </ol>
+        <div class="scan__cta">
+          <a href="#book" class="btn btn--scan" data-reason="Whitening or Invisalign" data-note="Free 3D smile preview">Book a free smile preview <span class="arr" aria-hidden="true">→</span></a>
+        </div>
+      </div>
+      <div class="stage" id="stage">
+        <div class="stage__ring" aria-hidden="true"></div>
+        <svg class="stage__fallback" viewBox="0 0 200 260" role="img" aria-label="Illustration of a molar tooth drawn as a 3D scan">
+          <defs><linearGradient id="tg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f6f3ea"/><stop offset=".55" stop-color="#e8dcc4"/><stop offset="1" stop-color="#c9b38c"/></linearGradient></defs>
+          <path d="M100 30c-12 0-17-12-38-12-26 0-44 20-44 48 0 22 8 34 12 50 5 22 6 46 12 76 4 20 10 50 24 50 16 0 15-34 20-56 3-14 7-22 14-22s11 8 14 22c5 22 4 56 20 56 14 0 20-30 24-50 6-30 7-54 12-76 4-16 12-28 12-50 0-28-18-48-44-48-21 0-26 12-38 12z" fill="url(#tg)" stroke="#5eead4" stroke-width="1.5"/>
+          <g fill="none" stroke="#5eead4" stroke-opacity=".35"><path d="M24 70h152M20 100h160M30 130h140M40 160h120M48 190h104"/><path d="M62 22c-10 60-6 140 4 214M100 34v200M138 22c10 60 6 140-4 214"/></g>
+        </svg>
+        <span class="corner corner--a" aria-hidden="true"></span><span class="corner corner--b" aria-hidden="true"></span><span class="corner corner--c" aria-hidden="true"></span><span class="corner corner--d" aria-hidden="true"></span>
+        <div class="hud hud--tl" aria-hidden="true">CW·SCAN 3.2<br><b>Tooth #30</b> · lower right molar</div>
+        <div class="hud hud--tr" aria-hidden="true">Points<br><b id="hudPts">24,816</b></div>
+        <div class="hud hud--bl" aria-hidden="true"><span id="hudMode">Capture</span> · <b id="hudPct">100%</b><div class="meter"><i id="hudBar"></i></div></div>
+        <div class="hud hud--br" aria-hidden="true">Shade <b id="hudShade">B1</b><div class="shades" id="shades"><i style="background:#d9c49a">A3</i><i style="background:#e4d4b0">A2</i><i style="background:#eee4cb">A1</i><i class="on" style="background:#f7f3ea">B1</i></div></div>
+        <span class="tag" style="left:2%;top:24%" aria-hidden="true">Cusp<small>enamel 2.1 mm</small></span>
+        <span class="tag tag--r" style="right:2%;top:41%" aria-hidden="true">Crown<small>no decay found</small></span>
+        <span class="tag" style="left:4%;top:62%" aria-hidden="true">Root<small>healthy bone level</small></span>
+        <div class="quote" aria-hidden="true">
+          <p class="quote__lbl">Your quote · printed today</p>
+          <div class="quote__row"><span>In-office whitening</span><b>$450</b></div>
+          <div class="quote__row"><span>3D scan &amp; consult</span><b>$0</b></div>
+          <div class="quote__row quote__row--t"><span>You pay</span><b>$450</b></div>
+        </div>
+      </div>
     </div>
-    <div class="mobile-menu" id="mobileMenu" hidden>
-      <a href="#services">Services</a>
-      <a href="#insurance">Insurance</a>
-      <a href="#plan">No insurance?</a>
-      <a href="#team">Our team</a>
-      <a href="#book">Book appointment</a>
-      <a href="#visit">Hours &amp; location</a>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="section" id="services">
+  <div class="wrap">
+    <div class="svc-head" data-r>
+      <div><p class="kicker">Services &amp; prices</p><h2 class="h2">Everything your family’s smile needs, in one office.</h2></div>
+      <p class="sub">Self-pay prices are listed right here, because you shouldn’t have to call to find out. With insurance, you usually pay less.</p>
     </div>
-  </header>
+    <div class="svc-list">
+      <article class="svc" data-r><span class="svc__n">01</span><h3>Cleanings &amp; exams</h3><p>Checkups every six months, with digital X-rays that use up to 90% less radiation.</p><span class="svc__p">$99<small>new patients</small></span></article>
+      <article class="svc" data-r><span class="svc__n">02</span><h3>Kids’ dentistry</h3><p>First visits from age one, sealants and fluoride, and a prize box at the end.</p><span class="svc__p">$85<small>kids’ visit</small></span></article>
+      <article class="svc" data-r><span class="svc__n">03</span><h3>Teeth whitening</h3><p>In-office whitening in about an hour, or custom take-home trays ($295).</p><span class="svc__p">$450<small>in-office</small></span></article>
+      <article class="svc" data-r><span class="svc__n">04</span><h3>Invisalign</h3><p>Clear aligners, starting with a free 3D scan so you can see your new smile first.</p><span class="svc__p">$3,900<small>from</small></span></article>
+      <article class="svc" data-r><span class="svc__n">05</span><h3>Fillings &amp; crowns</h3><p>Tooth-colored fillings, and same-day crowns milled right here in our office.</p><span class="svc__p">$180<small>filling, from</small></span></article>
+      <article class="svc" data-r><span class="svc__n">06</span><h3>Dental implants</h3><p>Permanent replacements for missing teeth, from a single implant to a full arch.</p><span class="svc__p">$3,600<small>implant + crown</small></span></article>
+      <article class="svc" data-r><span class="svc__n">07</span><h3>Sedation</h3><p>Nervous about the dentist? Nitrous oxide or oral sedation helps you relax.</p><span class="svc__p">$75<small>nitrous</small></span></article>
+      <article class="svc svc--urgent" data-r><span class="svc__n">08</span><h3>Emergency care</h3><p>Toothache, a chipped tooth or a lost crown? Call before 2 pm for a same-day visit. <a href="tel:+16025550163">Call now →</a></p><span class="svc__p">$95<small>emergency exam</small></span></article>
+    </div>
+    <p class="list-note">Prices are for patients paying without insurance. CareCredit, Sunbit and HSA/FSA cards accepted.</p>
+  </div>
+</section>
 
-  <main id="main">
-    <!-- HERO -->
-    <section class="hero">
-      <div class="hero__media" aria-hidden="false">
-        <img src="images/hero-wide.webp" width="1400" height="1366" alt="Smiling patient talking with her dentist during a checkup" fetchpriority="high">
-      </div>
-      <div class="wrap hero__grid">
-        <div class="hero__copy">
-          <p class="eyebrow">Family &amp; cosmetic dentist in Phoenix, AZ</p>
-          <h1>A dentist you'll <em>actually</em> look forward to.</h1>
-          <p class="lead">Gentle care for kids, parents and grandparents under one roof. We explain everything before we start, show you the price up front, and never rush you out the door.</p>
-          <div class="hero__actions">
-            <a href="#book" class="btn btn--primary btn--lg">Book appointment</a>
-            <a href="tel:+16025550163" class="btn btn--ghost btn--lg">Call (602) 555-0163</a>
-          </div>
-          <div class="hero__proof">
-            <div class="g-badge"><b>4.9</b><span class="stars">★★★★★</span><small>380+ Google reviews</small></div>
-            <ul class="chips">
-              <li>New patients welcome</li>
-              <li>Most PPO plans accepted</li>
-              <li>Same-day emergencies</li>
-            </ul>
-          </div>
-        </div>
-        <div class="slot-card">
-          <p class="slot-card__label">Next available</p>
-          <p class="slot-card__day" id="nextDay">Tomorrow</p>
-          <div class="slot-card__times" id="heroSlots"></div>
-          <a href="#book" class="slot-card__link">See all times →</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- NEW PATIENT OFFER -->
-    <section class="offer">
-      <div class="wrap offer__inner">
-        <p class="offer__tag">New patient special</p>
-        <p class="offer__text"><b>$99</b> exam, full X-rays and cleaning for new patients without insurance. <span>Regularly $310.</span></p>
-        <a href="#book" class="offer__link">Claim your visit →</a>
-      </div>
-    </section>
-
-
-    <!-- TRUST -->
-    <section class="trust" aria-label="Memberships and insurance">
-      <div class="wrap trust__inner">
-        <span class="trust__lbl">Trusted &amp; in-network</span>
-        <ul>
-          <li>Invisalign<sup>®</sup> Provider</li>
-          <li>American Dental Association</li>
-          <li>Delta Dental</li>
-          <li>Cigna</li>
-          <li>Aetna</li>
-          <li>MetLife</li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- SERVICES -->
-    <section class="section" id="services">
-      <div class="wrap">
-        <header class="head">
-          <p class="kicker">What we do</p>
-          <h2>Everything your family's smile needs, in one office.</h2>
-        </header>
-        <div class="services">
-          <article class="svc"><span class="svc__ico"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M11 4c-3.5 0-6 2.6-6 6.2 0 2.2.8 3.5 1.4 5.3.7 2.1.9 5 1.6 8.3.4 2 1.2 4.2 2.6 4.2 1.7 0 1.8-3.6 2.4-6.2.4-1.6.9-2.6 3-2.6s2.6 1 3 2.6c.6 2.6.7 6.2 2.4 6.2 1.4 0 2.2-2.2 2.6-4.2.7-3.3.9-6.2 1.6-8.3.6-1.8 1.4-3.1 1.4-5.3C27 6.6 24.5 4 21 4c-2.2 0-3.4 1.2-5 1.2S13.2 4 11 4z"/></svg></span><h3>Cleanings &amp; exams</h3><p>Checkups every six months, with digital X-rays that use up to 90% less radiation.</p></article>
-          <article class="svc"><span class="svc__ico"><svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="11" r="6"/><path d="M6 28c1-5.5 5-8.5 10-8.5s9 3 10 8.5"/><path d="M13.5 12.5c.8.9 4.2.9 5 0"/></svg></span><h3>Kids' dentistry</h3><p>First visits from age one, sealants and fluoride, plus a prize box at the end.</p></article>
-          <article class="svc"><span class="svc__ico"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3l2.6 7.4L26 13l-7.4 2.6L16 23l-2.6-7.4L6 13l7.4-2.6z"/><path d="M25 21l1 3 3 1-3 1-1 3-1-3-3-1 3-1z"/></svg></span><h3>Teeth whitening</h3><p>In-office whitening in an hour, or custom take-home trays.</p></article>
-          <article class="svc"><span class="svc__ico"><svg viewBox="0 0 32 32" aria-hidden="true"><rect x="4" y="9" width="24" height="14" rx="7"/><path d="M10 9v14M16 9v14M22 9v14M4 16h24"/></svg></span><h3>Invisalign</h3><p>Clear aligners with a free 3D scan, so you can see your new smile before you start.</p></article>
-          <article class="svc"><span class="svc__ico"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M7 12h18v4a9 9 0 0 1-18 0z"/><path d="M11 12V7a5 5 0 0 1 10 0v5"/></svg></span><h3>Crowns &amp; fillings</h3><p>Tooth-colored fillings and same-day crowns milled right in our office.</p></article>
-          <article class="svc"><span class="svc__ico"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M10 4h12l-1.5 5h-9z"/><path d="M12 9h8M12.5 13h7M13 17h6M13.5 21h5M14 25h4l-2 3z"/></svg></span><h3>Dental implants</h3><p>Permanent replacements for missing teeth, from a single implant to full arch.</p></article>
-          <article class="svc"><span class="svc__ico"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M22 20.5A10 10 0 0 1 11.5 6a10 10 0 1 0 14.5 13 9.9 9.9 0 0 1-4 1.5z"/></svg></span><h3>Sedation</h3><p>Nervous about the dentist? Nitrous oxide and oral sedation help you relax.</p></article>
-          <article class="svc svc--urgent"><span class="svc__ico"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 4l13 23H3z"/><path d="M16 12v7M16 23v.5"/></svg></span><h3>Emergency care</h3><p>Toothache, a chipped tooth, or a lost crown? Call before 2pm for a same-day visit.</p><a href="tel:+16025550163">Call now →</a></article>
-        </div>
-      </div>
-    </section>
-
-
-    <!-- FEATURES -->
-    <section class="section section--tight" aria-label="Why patients choose us">
-      <div class="wrap features">
-        <article class="feat">
-          <div class="feat__img"><img src="images/smile-closeup.webp" width="1200" height="800" alt="Close-up of a healthy, bright smile during a dental exam" loading="lazy"></div>
-          <div class="feat__txt">
-            <p class="kicker">Cosmetic dentistry</p>
-            <h2>See your new smile before you commit.</h2>
-            <p class="sub">Whitening, veneers or Invisalign: we take a free 3D scan and show you the result on screen, together with an exact price. No pressure, no surprises.</p>
-            <a href="#book" class="link-arrow">Book a free smile consult →</a>
-          </div>
-        </article>
-        <article class="feat feat--flip">
-          <div class="feat__img"><img src="images/kids-visit.webp" width="1200" height="800" alt="Young girl relaxed in the dental chair during her checkup" loading="lazy"></div>
-          <div class="feat__txt">
-            <p class="kicker">Kids' dentistry</p>
-            <h2>Little patients, zero tears.</h2>
-            <p class="sub">We see kids from their very first tooth. Short, playful visits, parents welcome in the room, and a prize box at the end. Most kids ask when they can come back.</p>
-            <a href="#book" class="link-arrow">Book your child's visit →</a>
-          </div>
-        </article>
-        <article class="feat">
-          <div class="feat__img feat__img--tall"><img src="images/office-xray.webp" width="800" height="909" alt="Dentists reviewing a digital panoramic X-ray with a patient" loading="lazy"></div>
-          <div class="feat__txt">
-            <p class="kicker">Modern office</p>
-            <h2>You'll see exactly what we see.</h2>
-            <p class="sub">Digital X-rays appear on the screen in front of your chair in seconds, with up to 90% less radiation than film. We walk you through every image before suggesting any treatment.</p>
-            <ul class="ticks"><li>Digital &amp; 3D X-rays</li><li>Same-day crowns</li><li>Intraoral camera</li></ul>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <!-- INSURANCE -->
-    <section class="section section--sand" id="insurance">
-      <div class="wrap ins">
-        <div>
-          <p class="kicker">Insurance</p>
-          <h2>Will my insurance work here?</h2>
-          <p class="sub">Pick your plan and we'll tell you right away. We file every claim for you, so you only pay your share.</p>
-        </div>
-        <div class="ins__box">
-          <label for="insSelect" class="ins__label">Your dental insurance</label>
-          <select id="insSelect">
-            <option value="">Choose your plan…</option>
-            <option value="in">Delta Dental PPO</option>
-            <option value="in">Cigna Dental PPO</option>
-            <option value="in">Aetna Dental PPO</option>
-            <option value="in">MetLife PDP</option>
-            <option value="in">Guardian PPO</option>
-            <option value="in">United Concordia</option>
-            <option value="in">Blue Cross Blue Shield of Arizona</option>
-            <option value="out">Humana Dental</option>
-            <option value="out">Ameritas</option>
-            <option value="hmo">An HMO / DHMO plan</option>
-            <option value="none">I don't have insurance</option>
-            <option value="other">Other / not sure</option>
-          </select>
-          <div class="ins__result" id="insResult" aria-live="polite"></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- MEMBERSHIP PLAN -->
-    <section class="section" id="plan">
-      <div class="wrap plan">
-        <div class="plan__copy">
-          <p class="kicker">No insurance? No problem.</p>
-          <h2>The Wren Smile Plan: everyday care for one simple monthly price.</h2>
-          <p class="sub">There are no deductibles, waiting periods or claim forms. Join in the office or online and start using it the same day.</p>
-          <div class="plan__toggle" role="group" aria-label="Plan type">
-            <button type="button" class="is-on" data-plan="adult">Adult</button>
-            <button type="button" data-plan="kid">Child (under 14)</button>
-          </div>
-        </div>
-        <div class="plan__card">
-          <p class="plan__price"><span>$</span><b id="planPrice">29</b><small>/ month</small></p>
-          <p class="plan__yearly" id="planYear">or $299 paid yearly (save $49)</p>
-          <ul>
-            <li>2 cleanings &amp; exams per year</li>
-            <li>All routine X-rays</li>
-            <li>1 emergency exam per year</li>
-            <li id="planPerk">15% off fillings, crowns and implants</li>
-          </ul>
-          <a href="#book" class="btn btn--primary btn--block">Join at your first visit</a>
-          <p class="plan__note">Compared to paying full price, members save about <b id="planSave">$420</b> a year on routine care alone.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- DOCTOR -->
-    <section class="section" id="team">
-      <div class="wrap">
-        <header class="head head--split">
-          <div>
-            <p class="kicker">Meet the team</p>
-            <h2>Friendly faces who remember your name.</h2>
-          </div>
-          <p class="sub">"Most people who are scared of the dentist had one bad experience. Our job is to make sure the next one is different." <b>— Dr. Elena Márquez, founder</b></p>
-        </header>
-        <div class="team">
-          <figure class="member">
-            <div class="member__img"><img src="images/team-marquez.webp" width="640" height="800" alt="Dr. Elena Márquez treating a patient" loading="lazy"></div>
-            <figcaption><b>Dr. Elena Márquez, DDS</b><span>Founder · Family &amp; cosmetic dentistry</span><small>14 years in practice · English &amp; Spanish</small></figcaption>
-          </figure>
-          <figure class="member">
-            <div class="member__img"><img src="images/team-haddad.webp" width="640" height="800" alt="Dr. Omar Haddad smiling in the treatment room" loading="lazy"></div>
-            <figcaption><b>Dr. Omar Haddad, DMD</b><span>Implants &amp; oral surgery</span><small>Known for painless extractions</small></figcaption>
-          </figure>
-          <figure class="member">
-            <div class="member__img"><img src="images/team-whitaker.webp" width="640" height="800" alt="Dr. Ben Whitaker standing in front of a 3D smile scan" loading="lazy"></div>
-            <figcaption><b>Dr. Ben Whitaker, DMD</b><span>Orthodontics &amp; Invisalign</span><small>Over 900 smiles straightened</small></figcaption>
-          </figure>
-          <figure class="member">
-            <div class="member__img"><img src="images/team-tran.webp" width="640" height="800" alt="Lina Tran, dental hygienist, adjusting her magnification loupes" loading="lazy"></div>
-            <figcaption><b>Lina Tran, RDH</b><span>Lead dental hygienist</span><small>Kids' favorite · gentle cleanings</small></figcaption>
-          </figure>
-        </div>
-      </div>
-    </section>
-
-    <!-- REVIEWS -->
-    <section class="section">
-      <div class="wrap">
-        <header class="head head--center">
-          <p class="kicker">Patient reviews</p>
-          <h2>380+ five-star reviews and counting</h2>
-        </header>
-        <div class="reviews">
-          <figure class="rev"><blockquote>"I hadn't been to a dentist in 9 years because of anxiety. Nobody lectured me. They just helped. I actually booked my next cleaning before I left."</blockquote><figcaption>Marcus T. · Arcadia</figcaption></figure>
-          <figure class="rev"><blockquote>"My 4-year-old asks when she can go back. That says it all. The hygienist made the whole thing feel like a game."</blockquote><figcaption>Priya S. · Biltmore</figcaption></figure>
-          <figure class="rev"><blockquote>"Cracked a tooth on a Thursday morning and was fixed by lunch. They told me the price before they started, and it was exactly what I paid."</blockquote><figcaption>Daniel R. · Scottsdale</figcaption></figure>
-        </div>
-      </div>
-    </section>
-
-    <!-- BOOKING -->
-    <section class="section section--sand" id="book">
-      <div class="wrap book">
-        <div class="book__intro">
-          <p class="kicker">Book online</p>
-          <h2>Pick a time that works for you.</h2>
-          <p class="sub">Choose a reason, a day and a time. We'll text you a confirmation and a reminder the day before.</p>
-          <div class="book__call">
-            <span>Prefer to talk?</span>
-            <a href="tel:+16025550163">(602) 555-0163</a>
-            <small>Mon–Thu 7–5 · Fri 7–2 · Sat 8–12</small>
-          </div>
-        </div>
-
-        <form class="wiz" id="bookForm" novalidate>
-          <div class="wiz__top">
-            <span class="wiz__count" id="wizCount">Step 1 of 4</span>
-            <div class="wiz__bar"><i id="wizBar"></i></div>
-          </div>
-
-          <fieldset class="step is-on" data-step="1">
-            <legend>What brings you in?</legend>
-            <div class="opts">
-              <label class="opt"><input type="radio" name="reason" value="Cleaning & checkup"><span>Cleaning &amp; checkup</span></label>
-              <label class="opt"><input type="radio" name="reason" value="Tooth pain / emergency"><span>Tooth pain / emergency</span></label>
-              <label class="opt"><input type="radio" name="reason" value="Whitening or Invisalign"><span>Whitening or Invisalign</span></label>
-              <label class="opt"><input type="radio" name="reason" value="Child's visit"><span>My child's visit</span></label>
-              <label class="opt"><input type="radio" name="reason" value="Implant or crown consult"><span>Implant or crown consult</span></label>
-              <label class="opt"><input type="radio" name="reason" value="Something else"><span>Something else</span></label>
-            </div>
-            <p class="err" data-err="1">Choose a reason to continue.</p>
-          </fieldset>
-
-          <fieldset class="step" data-step="2">
-            <legend>Have you visited us before?</legend>
-            <div class="opts opts--2">
-              <label class="opt"><input type="radio" name="patient" value="New patient"><span><b>I'm a new patient</b><small>Welcome! Plan on about 60 minutes.</small></span></label>
-              <label class="opt"><input type="radio" name="patient" value="Returning patient"><span><b>I've been here before</b><small>Welcome back.</small></span></label>
-            </div>
-            <label class="field"><span>Insurance (optional)</span>
-              <select name="insurance">
-                <option>I'll bring my card</option><option>Delta Dental</option><option>Cigna</option><option>Aetna</option><option>MetLife</option><option>Guardian</option><option>Other</option><option>No insurance</option>
-              </select>
-            </label>
-            <p class="err" data-err="2">Let us know if you're new or returning.</p>
-          </fieldset>
-
-          <fieldset class="step" data-step="3">
-            <legend>Choose a day and time</legend>
-            <div class="days" id="days" role="radiogroup" aria-label="Day"></div>
-            <div class="times" id="times" role="radiogroup" aria-label="Time"></div>
-            <p class="err" data-err="3">Pick a day and a time.</p>
-          </fieldset>
-
-          <fieldset class="step" data-step="4">
-            <legend>Where should we send your confirmation?</legend>
-            <div class="row">
-              <label class="field"><span>First and last name</span><input name="name" autocomplete="name"></label>
-              <label class="field"><span>Mobile phone</span><input name="phone" type="tel" autocomplete="tel" placeholder="(602) 555-0100"></label>
-            </div>
-            <label class="field"><span>Email</span><input name="email" type="email" autocomplete="email"></label>
-            <div class="recap" id="recap"></div>
-            <p class="err" data-err="4">Please add your name, a 10-digit phone number and a valid email.</p>
-          </fieldset>
-
-          <div class="done" id="done" hidden>
-            <div class="done__check">✓</div>
-            <h3>You're booked!</h3>
-            <p id="doneText"></p>
-            <p class="fine">This is a concept site, so no appointment was made.</p>
-            <button type="button" class="btn btn--ghost" id="again">Book another visit</button>
-          </div>
-
-          <div class="wiz__nav">
-            <button type="button" class="btn btn--text" id="prev" hidden>← Back</button>
-            <button type="button" class="btn btn--primary" id="next">Continue</button>
-            <button type="submit" class="btn btn--primary" id="submit" hidden>Confirm appointment</button>
-          </div>
-        </form>
-      </div>
-    </section>
-
-    <!-- FAQ -->
-    <section class="section" id="faq">
-      <div class="wrap faq">
-        <header>
-          <p class="kicker">Questions</p>
-          <h2>Good to know before your visit</h2>
-        </header>
-        <div class="faq__list">
-          <details><summary>What should I bring to my first appointment?</summary><p>Bring a photo ID, your insurance card if you have one, and a list of any medications you take. You can fill out the new patient forms online after you book, which saves about 15 minutes in the office.</p></details>
-          <details><summary>How much will my visit cost?</summary><p>We always tell you the price before treatment. With in-network insurance, cleanings and exams are usually covered at 100%. Without insurance, our new patient special is $99, and the Wren Smile Plan starts at $29 a month.</p></details>
-          <details><summary>Do you see kids?</summary><p>Yes. We see children from their first tooth (around age one) and up. Parents are always welcome to stay in the room.</p></details>
-          <details><summary>I'm nervous about the dentist. Can you help?</summary><p>Absolutely. Tell us when you book and we'll schedule extra time. We offer noise-cancelling headphones, a weighted blanket, nitrous oxide and oral sedation. You can raise your hand to pause at any time.</p></details>
-          <details><summary>Do you offer payment plans?</summary><p>Yes. We accept CareCredit and Sunbit, with 0% financing on treatment over $500 for qualified patients, and all major cards and HSA/FSA cards.</p></details>
-          <details><summary>¿Hablan español?</summary><p>¡Sí! La Dra. Márquez y gran parte de nuestro equipo hablan español. Llámenos al (602) 555-0163.</p></details>
-        </div>
-      </div>
-    </section>
-
-    <!-- VISIT -->
-    <section class="section section--navy" id="visit">
-      <div class="wrap visit">
-        <div>
-          <p class="kicker kicker--light">Visit us</p>
-          <h2>In Arcadia, ten minutes from downtown.</h2>
-          <p class="visit__addr">Camelback Rd &amp; 44th St · Phoenix, AZ 85018<br>Free covered parking right outside the door.</p>
-          <div class="visit__cta">
-            <a href="tel:+16025550163" class="btn btn--sun">Call (602) 555-0163</a>
-            <a href="#book" class="btn btn--line">Book online</a>
-          </div>
-        </div>
-        <table class="hours" aria-label="Office hours">
-          <tbody id="hoursBody">
-            <tr data-d="1"><th>Monday</th><td>7:00 AM – 5:00 PM</td></tr>
-            <tr data-d="2"><th>Tuesday</th><td>7:00 AM – 5:00 PM</td></tr>
-            <tr data-d="3"><th>Wednesday</th><td>7:00 AM – 5:00 PM</td></tr>
-            <tr data-d="4"><th>Thursday</th><td>7:00 AM – 5:00 PM</td></tr>
-            <tr data-d="5"><th>Friday</th><td>7:00 AM – 2:00 PM</td></tr>
-            <tr data-d="6"><th>Saturday</th><td>8:00 AM – 12:00 PM</td></tr>
-            <tr data-d="0"><th>Sunday</th><td>Closed</td></tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="wrap footer__inner">
+<!-- FEATURES -->
+<section class="section" style="padding-top:0" aria-label="Why patients choose us">
+  <div class="wrap feats">
+    <article class="feat" data-r>
+      <div class="feat__img feat__img--arch"><img src="images/kids-visit.webp" width="1200" height="800" alt="Young girl relaxed in the dental chair during her checkup" loading="lazy" data-par></div>
       <div>
-        <strong>Cactus Wren Dental</strong>
-        <span>Family &amp; cosmetic dentistry · Phoenix, Arizona</span>
+        <p class="kicker">Kids’ dentistry</p>
+        <h2 class="h2">Little patients, zero tears.</h2>
+        <p class="sub">We see kids from their very first tooth. Short, playful visits, parents welcome in the room, and a prize box at the end. Most kids ask when they can come back.</p>
+        <a href="#book" class="link" data-reason="Child's visit">Book your child’s visit →</a>
       </div>
-      <nav aria-label="Footer"><a href="#services">Services</a><a href="#insurance">Insurance</a><a href="#plan">Membership</a><a href="#book">Book</a><a href="#faq">FAQ</a></nav>
-      <div class="footer__note">
-        <p><b>Concept project.</b> Cactus Wren Dental, its team members, the reviews and all prices are fictional, made for a portfolio. Phone numbers use the fictional 555-01xx range.</p>
+    </article>
+    <article class="feat feat--flip" data-r>
+      <div class="feat__img"><img src="images/office-xray.webp" width="800" height="909" alt="Dentists reviewing a digital panoramic X-ray with a patient" loading="lazy" data-par></div>
+      <div>
+        <p class="kicker">Modern office</p>
+        <h2 class="h2">You’ll see exactly what we see.</h2>
+        <p class="sub">Digital X-rays appear on the screen in front of your chair in seconds. We walk you through every image before we suggest any treatment.</p>
+        <ul class="ticks"><li>Digital &amp; 3D X-rays</li><li>Same-day crowns</li><li>Intraoral camera</li><li>Noise-cancelling headphones</li></ul>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- INSURANCE + ESTIMATOR -->
+<section class="section band" id="insurance">
+  <div class="wrap">
+    <div class="ins">
+      <div data-r>
+        <p class="kicker">Insurance</p>
+        <h2 class="h2">Will my insurance work here?</h2>
+        <p class="sub">Pick your plan and you’ll know right away. We file every claim for you, so you only pay your share.</p>
+      </div>
+      <div class="ins__box" data-r>
+        <label for="insSelect" class="lbl">Your dental insurance</label>
+        <select id="insSelect">
+          <option value="">Choose your plan…</option>
+          <option value="in">Delta Dental PPO</option>
+          <option value="in">Cigna Dental PPO</option>
+          <option value="in">Aetna Dental PPO</option>
+          <option value="in">MetLife PDP</option>
+          <option value="in">Guardian PPO</option>
+          <option value="in">United Concordia</option>
+          <option value="in">Blue Cross Blue Shield of Arizona</option>
+          <option value="out">Humana Dental</option>
+          <option value="out">Ameritas</option>
+          <option value="hmo">An HMO / DHMO plan</option>
+          <option value="none">I don’t have insurance</option>
+          <option value="other">Other / not sure</option>
+        </select>
+        <div class="ins__out" id="insOut" aria-live="polite"></div>
+      </div>
+    </div>
+
+    <div class="est" id="estimate">
+      <div data-r>
+        <p class="kicker">Cost estimator</p>
+        <h2 class="h2">What will it cost me?</h2>
+        <p class="sub">Tick what you need this year. We’ll compare a typical PPO plan, our Smile Plan and paying on your own.</p>
+        <div class="est__items" id="estItems">
+          <label class="est__item"><input type="checkbox" value="clean" checked><span><b>Exam, X-rays &amp; cleaning</b><small>Preventive · $99 for new patients</small></span><span class="fee">$99</span></label>
+          <label class="est__item"><input type="checkbox" value="emerg"><span><b>Emergency exam</b><small>Preventive / diagnostic</small></span><span class="fee">$95</span></label>
+          <div class="est__item" data-item="fill"><input type="checkbox" value="fill" aria-label="Tooth-colored fillings" id="fillChk"><span><label for="fillChk"><b>Tooth-colored fillings</b></label><small>Basic care</small><span class="qty"><button type="button" data-q="-1" aria-label="One less filling">−</button><output id="fillQty">1</output><button type="button" data-q="1" aria-label="One more filling">+</button></span></span><span class="fee" id="fillFee">$180</span></div>
+          <label class="est__item"><input type="checkbox" value="crown"><span><b>Same-day crown</b><small>Major care</small></span><span class="fee">$1,290</span></label>
+          <label class="est__item"><input type="checkbox" value="implant"><span><b>Implant + crown</b><small>Major care</small></span><span class="fee">$3,600</span></label>
+          <label class="est__item"><input type="checkbox" value="white"><span><b>In-office whitening</b><small>Cosmetic</small></span><span class="fee">$450</span></label>
+        </div>
+      </div>
+      <div data-r>
+        <div class="est__cols" id="estCols">
+          <div class="col" data-k="ppo"><h3>With a PPO plan</h3><p class="amt" id="amtPpo">$0</p><div class="bar"><i></i></div><p>In-network, typical 100 / 80 / 50 coverage, $50 deductible, $1,500 yearly max.</p></div>
+          <div class="col" data-k="plan"><h3>Wren Smile Plan</h3><p class="amt" id="amtPlan">$299</p><div class="bar"><i></i></div><p>Includes the $299 yearly membership. Cleanings and 1 emergency exam included, 15% off fillings, crowns and implants.</p></div>
+          <div class="col" data-k="self"><h3>Paying on your own</h3><p class="amt" id="amtSelf">$99</p><div class="bar"><i></i></div><p>Our listed self-pay prices. 0% financing over $500 for qualified patients.</p></div>
+        </div>
+        <div class="est__foot">
+          <p>An estimate for a typical adult. Your exact share is on the written quote you get before any treatment.</p>
+          <a href="#book" class="btn btn--teal" id="estBook" data-reason="Something else">Book with this estimate <span class="arr" aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PLAN -->
+<section class="section" id="plan">
+  <div class="wrap plan">
+    <div data-r>
+      <p class="kicker">No insurance? No problem.</p>
+      <h2 class="h2">The Wren Smile Plan: everyday care for one simple monthly price.</h2>
+      <p class="sub">No deductibles, waiting periods or claim forms. Join in the office or online and start using it the same day.</p>
+      <div class="toggle" role="group" aria-label="Plan type">
+        <span class="pill" aria-hidden="true"></span>
+        <button type="button" class="on" data-plan="adult" aria-pressed="true">Adult</button>
+        <button type="button" data-plan="kid" aria-pressed="false">Child (under 14)</button>
+      </div>
+    </div>
+    <div class="card" data-r>
+      <p class="price"><span>$</span><b id="planPrice">29</b><small>/ month</small></p>
+      <p class="yr" id="planYear">or $299 paid yearly (save $49)</p>
+      <ul>
+        <li>2 cleanings &amp; exams per year</li>
+        <li>All routine X-rays</li>
+        <li>1 emergency exam per year</li>
+        <li id="planPerk">15% off fillings, crowns and implants</li>
+      </ul>
+      <a href="#book" class="btn btn--light btn--block" id="planBook" data-reason="Cleaning & checkup" data-note="Wren Smile Plan, adult">Join at your first visit <span class="arr" aria-hidden="true">→</span></a>
+      <p class="note">Compared with paying full price, members save about <b id="planSave">$420</b> a year on routine care alone.</p>
+    </div>
+  </div>
+</section>
+
+<!-- TEAM -->
+<section class="section band" id="team">
+  <div class="wrap">
+    <div class="team-head" data-r>
+      <div><p class="kicker">Meet the team</p><h2 class="h2">Friendly faces who remember your name.</h2></div>
+      <blockquote>“Most people who are scared of the dentist had one bad experience. Our job is to make sure the next one is different.”<cite>Dr. Elena Márquez, founder</cite></blockquote>
+    </div>
+    <div class="team">
+      <figure class="member" data-r><div class="member__img"><img src="images/team-marquez.webp" width="640" height="800" alt="Dr. Elena Márquez treating a patient" loading="lazy"></div><figcaption><b>Dr. Elena Márquez, DDS</b><span>Founder · family &amp; cosmetic</span><small>14 years in practice · English &amp; Spanish</small></figcaption></figure>
+      <figure class="member" data-r><div class="member__img"><img src="images/team-haddad.webp" width="640" height="800" alt="Dr. Omar Haddad smiling in the treatment room" loading="lazy"></div><figcaption><b>Dr. Omar Haddad, DMD</b><span>Implants &amp; oral surgery</span><small>Known for painless extractions</small></figcaption></figure>
+      <figure class="member" data-r><div class="member__img"><img src="images/team-whitaker.webp" width="640" height="800" alt="Dr. Ben Whitaker standing in front of a 3D smile scan" loading="lazy"></div><figcaption><b>Dr. Ben Whitaker, DMD</b><span>Orthodontics &amp; Invisalign</span><small>Over 900 smiles straightened</small></figcaption></figure>
+      <figure class="member" data-r><div class="member__img"><img src="images/team-tran.webp" width="640" height="800" alt="Lina Tran, dental hygienist, adjusting her magnification loupes" loading="lazy"></div><figcaption><b>Lina Tran, RDH</b><span>Lead dental hygienist</span><small>Kids’ favorite · gentle cleanings</small></figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="section" aria-labelledby="revTitle">
+  <div class="wrap">
+    <div data-r><p class="kicker">Patient reviews</p><h2 class="h2" id="revTitle">380+ five-star reviews and counting.</h2></div>
+    <div class="revs">
+      <figure class="rev" data-r><div><p class="st" aria-label="5 out of 5 stars">★★★★★</p><blockquote>“I hadn’t been to a dentist in 9 years because of anxiety. Nobody lectured me. They just helped. I booked my next cleaning before I left.”</blockquote></div><figcaption>Marcus T. · Arcadia</figcaption></figure>
+      <figure class="rev" data-r><div><p class="st" aria-label="5 out of 5 stars">★★★★★</p><blockquote>“My 4-year-old asks when she can go back. That says it all. The hygienist made the whole thing feel like a game.”</blockquote></div><figcaption>Priya S. · Biltmore</figcaption></figure>
+      <figure class="rev" data-r><div><p class="st" aria-label="5 out of 5 stars">★★★★★</p><blockquote>“Cracked a tooth on a Thursday morning and was fixed by lunch. They told me the price before they started, and that’s exactly what I paid.”</blockquote></div><figcaption>Daniel R. · Scottsdale</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- BOOKING -->
+<section class="section band" id="book">
+  <div class="wrap book">
+    <div data-r>
+      <p class="kicker">Book online</p>
+      <h2 class="h2">Pick a time that works for you.</h2>
+      <p class="sub">Choose a reason, a day and a time. We’ll text you a confirmation and a reminder the day before.</p>
+      <div class="call">
+        <span>Prefer to talk?</span>
+        <a href="tel:+16025550163">(602) 555-0163</a>
+        <small>Mon–Thu 7–5 · Fri 7–2 · Sat 8–12</small><br>
+        <a class="wa" href="https://wa.me/16025550163?text=Hi%2C%20I%27d%20like%20to%20book%20a%20visit." rel="noopener">Message us on WhatsApp →</a>
+      </div>
+    </div>
+
+    <form class="wiz" id="bookForm" novalidate>
+      <div class="wiz__top"><span class="wiz__count" id="wizCount">Step 1 of 4</span><div class="wiz__bar"><i id="wizBar"></i></div></div>
+      <label class="hp" aria-hidden="true">Leave this empty<input name="botcheck" tabindex="-1" autocomplete="off"></label>
+
+      <fieldset class="step on" data-step="1">
+        <legend>What brings you in?</legend>
+        <div class="opts">
+          <label class="opt"><input type="radio" name="reason" value="Cleaning & checkup"><span>Cleaning &amp; checkup</span></label>
+          <label class="opt"><input type="radio" name="reason" value="Tooth pain / emergency"><span>Tooth pain / emergency</span></label>
+          <label class="opt"><input type="radio" name="reason" value="Whitening or Invisalign"><span>Whitening, Invisalign or 3D preview</span></label>
+          <label class="opt"><input type="radio" name="reason" value="Child's visit"><span>My child’s visit</span></label>
+          <label class="opt"><input type="radio" name="reason" value="Implant or crown consult"><span>Implant or crown consult</span></label>
+          <label class="opt"><input type="radio" name="reason" value="Something else"><span>Something else</span></label>
+        </div>
+        <p class="err" data-err="1">Choose a reason to continue.</p>
+      </fieldset>
+
+      <fieldset class="step" data-step="2">
+        <legend>Have you visited us before?</legend>
+        <div class="opts">
+          <label class="opt"><input type="radio" name="patient" value="New patient"><span>I’m a new patient<small>Welcome! Plan on about 60 minutes.</small></span></label>
+          <label class="opt"><input type="radio" name="patient" value="Returning patient"><span>I’ve been here before<small>Welcome back.</small></span></label>
+        </div>
+        <label class="field"><span>Insurance (optional)</span>
+          <select name="insurance" id="bookIns"><option>I’ll bring my card</option><option>Delta Dental</option><option>Cigna</option><option>Aetna</option><option>MetLife</option><option>Guardian</option><option>Other</option><option>No insurance</option></select>
+        </label>
+        <p class="err" data-err="2">Let us know if you’re new or returning.</p>
+      </fieldset>
+
+      <fieldset class="step" data-step="3">
+        <legend>Choose a day and time</legend>
+        <div class="days" id="days" role="radiogroup" aria-label="Day"></div>
+        <div class="times" id="times" role="radiogroup" aria-label="Time"></div>
+        <p class="err" data-err="3">Pick a day and a time.</p>
+      </fieldset>
+
+      <fieldset class="step" data-step="4">
+        <legend>Where should we send your confirmation?</legend>
+        <div class="row">
+          <label class="field"><span>First and last name</span><input name="name" autocomplete="name"></label>
+          <label class="field"><span>Mobile phone</span><input name="phone" type="tel" autocomplete="tel" placeholder="(602) 555-0100"></label>
+        </div>
+        <label class="field"><span>Email</span><input name="email" type="email" autocomplete="email"></label>
+        <label class="field"><span>Anything we should know? (optional)</span><textarea name="note" id="bookNote" rows="2"></textarea></label>
+        <div class="recap" id="recap"></div>
+        <p class="err" data-err="4">Please add your name, a 10-digit phone number and a valid email.</p>
+      </fieldset>
+
+      <div class="done" id="done" hidden>
+        <div class="done__check" aria-hidden="true">✓</div>
+        <h3>You’re booked!</h3>
+        <p id="doneText"></p>
+        <p class="fine">This is a concept site, so no appointment was made.</p>
+        <button type="button" class="btn btn--ghost" id="again">Book another visit</button>
+      </div>
+
+      <div class="wiz__nav">
+        <button type="button" class="btn btn--text" id="prev" hidden>← Back</button>
+        <button type="button" class="btn btn--teal" id="next">Continue</button>
+        <button type="submit" class="btn btn--teal" id="submit" hidden>Confirm appointment</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section" id="faq">
+  <div class="wrap faq">
+    <div data-r><p class="kicker">Questions</p><h2 class="h2">Good to know before your visit.</h2></div>
+    <div data-r>
+      <details><summary>What should I bring to my first appointment?</summary><p>Bring a photo ID, your insurance card if you have one, and a list of any medications you take. You can fill out the new patient forms online after you book, which saves about 15 minutes in the office.</p></details>
+      <details><summary>How much will my visit cost?</summary><p>We always tell you the price before treatment. With in-network insurance, cleanings and exams are usually covered at 100%. Without insurance, our new patient special is $99, and the Wren Smile Plan starts at $29 a month.</p></details>
+      <details><summary>What is the 3D smile preview?</summary><p>A two-minute intraoral scan, with no impression goop. You see every tooth in 3D on the screen in front of your chair, preview whitening or Invisalign results, and get an exact price before anything starts. It’s free with any consult.</p></details>
+      <details><summary>Do you see kids?</summary><p>Yes. We see children from their first tooth (around age one) and up. Parents are always welcome to stay in the room.</p></details>
+      <details><summary>I’m nervous about the dentist. Can you help?</summary><p>Absolutely. Tell us when you book and we’ll schedule extra time. We offer noise-cancelling headphones, a weighted blanket, nitrous oxide and oral sedation. You can raise your hand to pause at any time.</p></details>
+      <details><summary>Do you offer payment plans?</summary><p>Yes. We accept CareCredit and Sunbit, with 0% financing on treatment over $500 for qualified patients, and all major cards and HSA/FSA cards.</p></details>
+      <details><summary>¿Hablan español?</summary><p>¡Sí! La Dra. Márquez y gran parte de nuestro equipo hablan español. Llámenos al (602) 555-0163.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- VISIT -->
+<section class="section visit" id="visit">
+  <div class="wrap visit__grid">
+    <div data-r>
+      <p class="kicker">Visit us</p>
+      <h2 class="h2">In Arcadia, ten minutes from downtown.</h2>
+      <p class="addr">Camelback Rd &amp; 44th St · Phoenix, AZ 85018<br>Free covered parking right outside the door.</p>
+      <div class="visit__cta">
+        <a href="tel:+16025550163" class="btn btn--light">Call (602) 555-0163</a>
+        <a href="#book" class="btn btn--line-light">Book online</a>
+      </div>
+    </div>
+    <table class="hours" aria-label="Office hours" data-r>
+      <tbody id="hoursBody">
+        <tr data-d="1"><th scope="row">Monday</th><td>7:00 AM – 5:00 PM</td></tr>
+        <tr data-d="2"><th scope="row">Tuesday</th><td>7:00 AM – 5:00 PM</td></tr>
+        <tr data-d="3"><th scope="row">Wednesday</th><td>7:00 AM – 5:00 PM</td></tr>
+        <tr data-d="4"><th scope="row">Thursday</th><td>7:00 AM – 5:00 PM</td></tr>
+        <tr data-d="5"><th scope="row">Friday</th><td>7:00 AM – 2:00 PM</td></tr>
+        <tr data-d="6"><th scope="row">Saturday</th><td>8:00 AM – 12:00 PM</td></tr>
+        <tr data-d="0"><th scope="row">Sunday</th><td>Closed</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <svg class="ridge" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true"><path d="M0 120V96l120-20 90 10 140-42 70 18 60-30 50 8 110 46 120-30 90 22 160-50 120 36 110-16 200 40v28z"/></svg>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot__grid">
+      <div><strong>Cactus Wren Dental</strong><p>Family &amp; cosmetic dentistry · Phoenix, Arizona<br><a href="tel:+16025550163">(602) 555-0163</a></p></div>
+      <nav aria-label="Footer"><a href="#scan">3D preview</a><a href="#services">Services</a><a href="#insurance">Insurance</a><a href="#estimate">Cost estimator</a><a href="#plan">Smile Plan</a><a href="#book">Book</a><a href="#faq">FAQ</a></nav>
+      <div class="foot__note">
+        <p><b>Concept project.</b> Cactus Wren Dental, its team, reviews and prices are fictional, made for a portfolio. Phone numbers use the fictional 555-01xx range. Photos are stock images.</p>
         <p>Designed &amp; built by <a href="https://sdabic.com">Slobodan Dabic</a></p>
       </div>
     </div>
-  </footer>
-
-  <div class="mbar">
-    <a href="tel:+16025550163" class="mbar__call">Call</a>
-    <a href="#book" class="mbar__book">Book appointment</a>
+    <svg class="foot__mark" viewBox="0 0 1000 150" aria-hidden="true"><text x="0" y="128">Cactus Wren</text></svg>
   </div>
+</footer>
 
-  <script src="script.js" defer></script>
+<div class="mbar" id="mbar">
+  <a href="tel:+16025550163">Call</a>
+  <a href="https://wa.me/16025550163?text=Hi%2C%20I%27d%20like%20to%20book%20a%20visit." rel="noopener">WhatsApp</a>
+  <a href="#book" class="b">Book a visit</a>
+</div>
+<button class="totop" id="totop" aria-label="Back to top"><svg viewBox="0 0 52 52" aria-hidden="true"><circle class="ring" cx="26" cy="26" r="24"/><path d="M26 33V19M20 25l6-6 6 6"/></svg></button>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js" defer></script>
+<script>
+(() => {
+  const $ = (s, el = document) => el.querySelector(s);
+  const $$ = (s, el = document) => [...el.querySelectorAll(s)];
+  const RM = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const money = n => "$" + Math.round(n).toLocaleString("en-US");
+
+  /* analytics opt-out: ?me=1 / ?me=0 */
+  try {
+    const me = new URLSearchParams(location.search).get("me");
+    if (me === "1") localStorage.setItem("cw-me", "1");
+    if (me === "0") localStorage.removeItem("cw-me");
+  } catch (e) {}
+
+  /* hero title: split words for the rise-in */
+  const h1 = $("#heroTitle");
+  if (!RM) {
+    let i = 0;
+    const wrapWords = node => {
+      [...node.childNodes].forEach(n => {
+        if (n.nodeType === 3) {
+          const frag = document.createDocumentFragment();
+          n.textContent.split(/(\s+)/).forEach(t => {
+            if (!t) return;
+            if (/^\s+$/.test(t)) { frag.append(t); return; }
+            const w = document.createElement("span"); w.className = "w";
+            const s = document.createElement("span"); s.textContent = t; s.style.setProperty("--i", i++);
+            w.append(s); frag.append(w);
+          });
+          n.replaceWith(frag);
+        } else if (n.tagName === "EM") {
+          const w = document.createElement("span"); w.className = "w";
+          const s = document.createElement("span"); s.style.setProperty("--i", i++);
+          n.replaceWith(w); s.append(n); w.append(s);
+        }
+      });
+    };
+    h1.setAttribute("aria-label", h1.textContent.replace(/\s+/g, " ").trim());
+    wrapWords(h1);
+    [...h1.children].forEach(c => c.setAttribute("aria-hidden", "true"));
+  }
+
+  /* Phoenix time */
+  const TZ = "America/Phoenix";
+  const phx = (d = new Date()) => {
+    const p = Object.fromEntries(new Intl.DateTimeFormat("en-US", { timeZone: TZ, weekday: "short", year: "numeric", month: "numeric", day: "numeric", hour: "numeric", minute: "numeric", hour12: false }).formatToParts(d).map(x => [x.type, x.value]));
+    return { dow: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"].indexOf(p.weekday), y: +p.year, m: +p.month, d: +p.day, mins: (+p.hour % 24) * 60 + +p.minute };
+  };
+  const HOURS = { 0: null, 1: [420, 1020], 2: [420, 1020], 3: [420, 1020], 4: [420, 1020], 5: [420, 840], 6: [480, 720] };
+  const SLOTS = { 1: ["7:00", "8:00", "9:30", "10:30", "11:30", "1:00", "2:00", "3:00", "4:00"], 5: ["7:00", "8:00", "9:00", "10:30", "11:30", "12:30"], 6: ["8:00", "9:00", "10:00", "11:00"] };
+  [2, 3, 4].forEach(d => SLOTS[d] = SLOTS[1]);
+  const toMins = t => { let [h, m] = t.split(":").map(Number); if (h < 7) h += 12; return h * 60 + m; };
+  const label = t => { const h = +t.split(":")[0]; return `${t} ${h >= 7 && h <= 11 ? "AM" : "PM"}`; };
+  const fmt = m => { const h = Math.floor(m / 60), mm = String(m % 60).padStart(2, "0"); return `${((h + 11) % 12) + 1}:${mm} ${h < 12 ? "AM" : "PM"}`; };
+  const DAYN = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+  const now = phx();
+
+  (() => {
+    const h = HOURS[now.dow], dot = $("#openDot"), txt = $("#openText");
+    if (h && now.mins >= h[0] && now.mins < h[1]) { dot.classList.add("open"); txt.textContent = `Open now · until ${fmt(h[1])}`; }
+    else if (h && now.mins < h[0]) txt.textContent = `Closed · opens today at ${fmt(h[0])}`;
+    else {
+      let d = now.dow, i = 0;
+      do { d = (d + 1) % 7; i++; } while (!HOURS[d]);
+      txt.textContent = `Closed · opens ${i === 1 ? "tomorrow" : DAYN[d]} at ${fmt(HOURS[d][0])}`;
+    }
+    $(`#hoursBody tr[data-d="${now.dow}"]`)?.classList.add("today");
+  })();
+
+  /* nav */
+  const tog = $(".nav__toggle"), menu = $("#mmenu"), nav = $(".nav");
+  tog.addEventListener("click", () => { const o = tog.getAttribute("aria-expanded") === "true"; tog.setAttribute("aria-expanded", String(!o)); tog.setAttribute("aria-label", o ? "Open menu" : "Close menu"); menu.hidden = o; });
+  $$("a", menu).forEach(a => a.addEventListener("click", () => { tog.setAttribute("aria-expanded", "false"); tog.setAttribute("aria-label", "Open menu"); menu.hidden = true; }));
+
+  /* open days */
+  const DOWS = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"], MONS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+  const taken = (k, t) => { let h = 0; for (const c of k + t) h = (h * 31 + c.charCodeAt(0)) >>> 0; return h % 3 === 0; };
+  const days = [];
+  for (let i = 0; days.length < 10 && i < 20; i++) {
+    const dt = new Date(Date.UTC(now.y, now.m - 1, now.d + i)), dow = dt.getUTCDay();
+    if (!HOURS[dow]) continue;
+    const key = dt.toISOString().slice(0, 10);
+    const slots = SLOTS[dow].map(t => ({ t, off: taken(key, t) || (i === 0 && toMins(t) <= now.mins + 60) }));
+    if (slots.every(s => s.off)) continue;
+    days.push({ key, dow, date: dt.getUTCDate(), mon: MONS[dt.getUTCMonth()], rel: i === 0 ? "Today" : i === 1 ? "Tomorrow" : null, slots });
+  }
+  const first = days[0];
+  $("#nextDay").textContent = first.rel || `${DOWS[first.dow]}, ${first.mon} ${first.date}`;
+  $("#heroSlots").innerHTML = first.slots.filter(s => !s.off).slice(0, 3).map(s => `<a href="#book" data-day="${first.key}" data-time="${s.t}">${label(s.t)}</a>`).join("");
+  $$("#heroSlots a").forEach(a => a.addEventListener("click", () => preselect(a.dataset.day, a.dataset.time)));
+
+  /* insurance checker */
+  const insSel = $("#insSelect"), insOut = $("#insOut");
+  const insMsg = {
+    in: n => ["ok", "✓", `Good news: we’re in-network with ${n}.`, "Cleanings and exams are usually covered at 100%. We check your exact benefits before your visit."],
+    out: n => ["mid", "~", `We’re out-of-network with ${n}, but you can still come here.`, "Most patients still get a big part of the cost covered. We file the claim and tell you your share up front."],
+    hmo: () => ["info", "i", "We don’t accept HMO / DHMO plans.", `Our <a href="#plan">Wren Smile Plan</a> is often cheaper than an HMO, with no network rules.`],
+    none: () => ["info", "♥", "No insurance? You’re covered here too.", `New patients pay $99 for an exam, X-rays and cleaning, or join the <a href="#plan">Wren Smile Plan</a> from $29 a month.`],
+    other: () => ["mid", "?", "Not sure? We’ll check for you.", `Bring your card, or call <a href="tel:+16025550163">(602) 555-0163</a> and we’ll look up your benefits in two minutes.`]
+  };
+  const mineMap = { in: "ppo", out: "ppo", hmo: "plan", none: "plan", other: null };
+  insSel.addEventListener("change", () => {
+    const v = insSel.value;
+    $$("#estCols .col").forEach(c => c.classList.toggle("mine", !!v && c.dataset.k === mineMap[v]));
+    if (!v) { insOut.innerHTML = ""; return; }
+    const name = insSel.options[insSel.selectedIndex].text;
+    const [cls, icon, title, body] = insMsg[v](name);
+    insOut.innerHTML = `<div class="msg msg--${cls}"><i aria-hidden="true">${icon}</i><div><b>${title}</b><p>${body}</p></div></div>`;
+    const bi = $("#bookIns"), short = name.split(" ")[0];
+    const opt = [...bi.options].find(o => v === "none" ? o.text === "No insurance" : o.text.startsWith(short));
+    if (opt) bi.value = opt.text;
+  });
+
+  /* cost estimator */
+  const FEES = { clean: { fee: 99, cat: "prev", name: "exam & cleaning" }, emerg: { fee: 95, cat: "prev", name: "emergency exam" }, fill: { fee: 180, cat: "basic", name: "filling" }, crown: { fee: 1290, cat: "major", name: "same-day crown" }, implant: { fee: 3600, cat: "major", name: "implant + crown" }, white: { fee: 450, cat: "cos", name: "in-office whitening" } };
+  let fillQ = 1;
+  const est = () => {
+    const picked = $$("#estItems input:checked").map(i => i.value);
+    let ppoIns = 0, ppoTot = 0, plan = 299, self = 0, ded = 50;
+    picked.forEach(k => {
+      const f = FEES[k], q = k === "fill" ? fillQ : 1, fee = f.fee * q;
+      self += fee; ppoTot += fee;
+      if (f.cat === "prev") ppoIns += fee;
+      else if (f.cat === "basic" || f.cat === "major") { const d = Math.min(ded, fee); ded -= d; ppoIns += (fee - d) * (f.cat === "basic" ? .8 : .5); }
+      if (f.cat === "prev") plan += 0; else if (f.cat === "cos") plan += fee; else plan += fee * .85;
+    });
+    const ppo = ppoTot - Math.min(ppoIns, 1500);
+    const vals = { ppo, plan, self }, max = Math.max(ppo, plan, self, 1), best = Math.min(ppo, plan, self);
+    [["ppo", "#amtPpo"], ["plan", "#amtPlan"], ["self", "#amtSelf"]].forEach(([k, sel]) => {
+      const el = $(sel), col = el.closest(".col"), from = +(el.dataset.v || 0), to = vals[k];
+      el.dataset.v = to;
+      col.querySelector(".bar i").style.width = (to / max * 100) + "%";
+      col.classList.toggle("best", picked.length > 0 && to === best && Object.values(vals).filter(v => v === best).length === 1);
+      if (RM || !window.gsap) { el.textContent = money(to); return; }
+      const o = { v: from }; gsap.to(o, { v: to, duration: .7, ease: "power2.out", onUpdate: () => el.textContent = money(o.v) });
+    });
+    const names = picked.map(k => k === "fill" ? `${fillQ} filling${fillQ > 1 ? "s" : ""}` : FEES[k].name);
+    $("#estBook").dataset.note = names.length ? `Estimate: ${names.join(", ")}` : "";
+    $("#estBook").dataset.reason = picked.some(k => k === "crown" || k === "implant") ? "Implant or crown consult" : picked.includes("white") ? "Whitening or Invisalign" : picked.includes("emerg") ? "Tooth pain / emergency" : "Cleaning & checkup";
+  };
+  $("#estItems").addEventListener("change", est);
+  $$(".qty button").forEach(b => b.addEventListener("click", e => {
+    e.preventDefault();
+    fillQ = Math.max(1, Math.min(6, fillQ + +b.dataset.q));
+    $("#fillQty").textContent = fillQ; $("#fillFee").textContent = money(180 * fillQ);
+    $("#fillChk").checked = true; est();
+  }));
+
+  /* plan toggle */
+  const PLANS = { adult: { m: 29, y: "or $299 paid yearly (save $49)", perk: "15% off fillings, crowns and implants", save: "$420", note: "Wren Smile Plan, adult" }, kid: { m: 19, y: "or $199 paid yearly (save $29)", perk: "Fluoride & sealants included", save: "$310", note: "Wren Smile Plan, child" } };
+  const pill = $(".toggle .pill"), tbtn = $$(".toggle button");
+  const placePill = b => { pill.style.width = b.offsetWidth + "px"; pill.style.transform = `translateX(${b.offsetLeft - 5}px)`; };
+  tbtn.forEach(b => b.addEventListener("click", () => {
+    tbtn.forEach(x => { x.classList.toggle("on", x === b); x.setAttribute("aria-pressed", x === b); });
+    placePill(b);
+    const p = PLANS[b.dataset.plan];
+    $("#planPrice").textContent = p.m; $("#planYear").textContent = p.y; $("#planPerk").textContent = p.perk; $("#planSave").textContent = p.save;
+    $("#planBook").dataset.note = p.note; $("#planBook").dataset.reason = b.dataset.plan === "kid" ? "Child's visit" : "Cleaning & checkup";
+  }));
+  addEventListener("load", () => placePill($(".toggle button.on")));
+  addEventListener("resize", () => placePill($(".toggle button.on")));
+
+  /* booking wizard */
+  const form = $("#bookForm"), steps = $$(".step", form), prev = $("#prev"), next = $("#next"), submit = $("#submit"), daysEl = $("#days"), timesEl = $("#times");
+  let step = 1; const pick = { day: null, time: null };
+  daysEl.innerHTML = days.map(d => `<button type="button" class="day" role="radio" aria-checked="false" data-key="${d.key}"><small>${d.rel === "Today" ? "Today" : DOWS[d.dow]}</small><b>${d.date}</b><span>${d.mon}</span></button>`).join("");
+  function renderTimes() {
+    const d = days.find(x => x.key === pick.day);
+    timesEl.innerHTML = d ? d.slots.map(s => `<button type="button" class="time${pick.time === s.t ? " on" : ""}" role="radio" aria-checked="${pick.time === s.t}" data-t="${s.t}"${s.off ? ` disabled aria-label="${label(s.t)} (booked)"` : ""}>${label(s.t)}</button>`).join("") : "";
+    $$(".time", timesEl).forEach(b => b.addEventListener("click", () => { pick.time = b.dataset.t; renderTimes(); err(3, false); }));
+  }
+  function selectDay(key) {
+    pick.day = key;
+    const d = days.find(x => x.key === key);
+    if (!d || !d.slots.some(s => s.t === pick.time && !s.off)) pick.time = null;
+    $$(".day", daysEl).forEach(b => { const on = b.dataset.key === key; b.classList.toggle("on", on); b.setAttribute("aria-checked", on); });
+    renderTimes();
+  }
+  $$(".day", daysEl).forEach(b => b.addEventListener("click", () => selectDay(b.dataset.key)));
+  selectDay(days[0].key);
+  function preselect(day, time) { selectDay(day); pick.time = time; renderTimes(); }
+  const err = (n, on) => $(`[data-err="${n}"]`, form).classList.toggle("on", on);
+  const val = n => (form.elements[n]?.value || "").trim();
+  const radio = n => form.querySelector(`input[name="${n}"]:checked`)?.value;
+  const checks = {
+    1: () => !!radio("reason"), 2: () => !!radio("patient"), 3: () => !!(pick.day && pick.time),
+    4: () => {
+      const bad = { name: val("name").length < 2, phone: val("phone").replace(/\D/g, "").length < 10, email: !/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(val("email")) };
+      Object.entries(bad).forEach(([k, b]) => { form.elements[k].classList.toggle("bad", b); form.elements[k].setAttribute("aria-invalid", b); });
+      return !Object.values(bad).some(Boolean);
+    }
+  };
+  const esc = s => s.replace(/[<>&"]/g, c => ({ "<": "&lt;", ">": "&gt;", "&": "&amp;", '"': "&quot;" }[c]));
+  const whenText = () => { const d = days.find(x => x.key === pick.day); return `${d.rel ? d.rel : DAYN[d.dow]}, ${d.mon} ${d.date} at ${label(pick.time)}`; };
+  function go(n, focus = true) {
+    step = n;
+    steps.forEach(s => s.classList.toggle("on", +s.dataset.step === n));
+    $("#wizCount").textContent = `Step ${n} of 4`; $("#wizBar").style.width = `${n * 25}%`;
+    prev.hidden = n === 1; next.hidden = n === 4; submit.hidden = n !== 4;
+    if (n === 4) $("#recap").innerHTML = `<b>${esc(radio("reason"))}</b> · ${esc(radio("patient"))}<br>${whenText()}<br>Insurance: ${esc(val("insurance"))}`;
+    if (focus) steps[n - 1].querySelector("input,button")?.focus({ preventScroll: true });
+  }
+  next.addEventListener("click", () => { const ok = checks[step](); err(step, !ok); if (ok) go(step + 1); });
+  prev.addEventListener("click", () => go(step - 1));
+  $$('input[name="reason"], input[name="patient"]', form).forEach(r => r.addEventListener("change", () => { err(step, false); if (r.name === "reason") setTimeout(() => step === 1 && go(2), 220); }));
+  form.addEventListener("input", e => { e.target.classList.remove("bad"); e.target.removeAttribute("aria-invalid"); });
+  form.addEventListener("keydown", e => { if (e.key === "Enter" && e.target.tagName === "INPUT" && step < 4) { e.preventDefault(); next.click(); } });
+  form.addEventListener("submit", e => {
+    e.preventDefault();
+    if (val("botcheck")) return;
+    const ok = checks[4](); err(4, !ok); if (!ok) return;
+    $("#doneText").innerHTML = `Thanks, ${esc(val("name").split(" ")[0])}! We’ll see you <b>${whenText()}</b>. A confirmation text is on its way to ${esc(val("phone"))}.`;
+    steps.forEach(s => s.classList.remove("on"));
+    form.classList.add("is-done"); $("#done").hidden = false;
+    form.scrollIntoView({ behavior: RM ? "auto" : "smooth", block: "center" });
+  });
+  $("#again").addEventListener("click", () => { form.reset(); form.classList.remove("is-done"); $("#done").hidden = true; selectDay(days[0].key); go(1); });
+
+  /* CTAs that prefill the form */
+  $$("[data-reason]").forEach(a => a.addEventListener("click", () => {
+    const r = a.dataset.reason, note = a.dataset.note;
+    const inp = form.querySelector(`input[name="reason"][value="${r}"]`);
+    if (form.classList.contains("is-done")) $("#again").click();
+    if (inp) { inp.checked = true; go(2, false); }
+    if (note) $("#bookNote").value = note;
+  }));
+
+  /* mobile bar + to top */
+  const mbar = $("#mbar"), totop = $("#totop"), book = $("#book"), hero = $(".hero");
+  let ticking = false;
+  const onScroll = () => {
+    ticking = false;
+    const y = scrollY, h = document.documentElement.scrollHeight - innerHeight;
+    nav.classList.toggle("scrolled", y > 10);
+    const br = book.getBoundingClientRect(), nearBook = br.top < innerHeight * .9 && br.bottom > 0;
+    mbar.classList.toggle("on", y > hero.offsetHeight * .6 && !nearBook);
+    totop.classList.toggle("on", y > innerHeight);
+    totop.style.setProperty("--pg", h > 0 ? Math.min(1, y / h) : 0);
+  };
+  addEventListener("scroll", () => { if (!ticking) { ticking = true; requestAnimationFrame(onScroll); } }, { passive: true });
+  onScroll();
+  totop.addEventListener("click", () => scrollTo({ top: 0, behavior: RM ? "auto" : "smooth" }));
+
+  /* reveal */
+  const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); } }), { threshold: .12, rootMargin: "0px 0px -6% 0px" });
+  $$("[data-r]").forEach(el => io.observe(el));
+
+  /* ====== 3D scan scene ====== */
+  const stage = $("#stage"), stepsEl = $$("#steps li");
+  const S = { scan: -1.3, white: 1, grid: 0, rot: 0, p: 1 };
+  const SHADES = ["A3", "A2", "A1", "B1"];
+  const hud = () => {
+    const sp = Math.min(1, Math.max(0, S.p * 4));
+    $("#hudPts").textContent = Math.round(24816 * sp).toLocaleString("en-US");
+    $("#hudPct").textContent = Math.round(sp * 100) + "%";
+    $("#hudBar").style.setProperty("--p", sp * 100 + "%");
+    const si = Math.min(3, Math.floor(S.white * 3.999));
+    $("#hudShade").textContent = SHADES[si];
+    $$("#shades i").forEach((el, i) => el.classList.toggle("on", i === si));
+    const st = Math.min(3, Math.floor(S.p * 4));
+    $("#hudMode").textContent = ["Capture", "Review", "Preview", "Quote"][st];
+    stepsEl.forEach((li, i) => { li.classList.toggle("on", i === st); li.querySelector(".bar").style.width = (i === st ? Math.min(1, S.p * 4 - i) * 100 : i < st ? 100 : 0) + "%"; });
+    stage.classList.toggle("tags", S.p > .27 && S.p < .52);
+    stage.classList.toggle("priced", S.p > .76);
+  };
+  let three = null;
+  const startThree = async () => {
+    try {
+      const T = await import("three");
+      const { MarchingCubes } = await import("three/addons/objects/MarchingCubes.js");
+      three = buildTooth(T, MarchingCubes);
+      stage.classList.add("ready");
+    } catch (e) { console.warn("3D preview unavailable", e); }
+  };
+
+  function buildTooth(T, MarchingCubes) {
+    const canvas = document.createElement("canvas");
+    stage.prepend(canvas);
+    const renderer = new T.WebGLRenderer({ canvas, antialias: true, alpha: true, powerPreference: "high-performance" });
+    if (!renderer.getContext()) throw new Error("no webgl");
+    renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
+    const scene = new T.Scene(), cam = new T.PerspectiveCamera(28, 1, .1, 50);
+    cam.position.set(0, .35, 7.4); cam.lookAt(0, -.05, 0);
+
+    /* signed distance field of a lower molar */
+    const len = (x, y, z) => Math.hypot(x, y, z);
+    const ell = (x, y, z, a, b, c) => { const k0 = len(x / a, y / b, z / c), k1 = len(x / (a * a), y / (b * b), z / (c * c)); return k0 * (k0 - 1) / k1; };
+    const smin = (a, b, k) => { const h = Math.max(k - Math.abs(a - b), 0) / k; return Math.min(a, b) - h * h * k * .25; };
+    const cone = (x, y, z, ax, ay, az, bx, by, bz, r1, r2) => {
+      const px = x - ax, py = y - ay, pz = z - az, bax = bx - ax, bay = by - ay, baz = bz - az;
+      const t = Math.max(0, Math.min(1, (px * bax + py * bay + pz * baz) / (bax * bax + bay * bay + baz * baz)));
+      return len(px - bax * t, py - bay * t, pz - baz * t) - (r1 + (r2 - r1) * t);
+    };
+    const cap = (x, y, z, ax, ay, az, bx, by, bz, r) => cone(x, y, z, ax, ay, az, bx, by, bz, r, r);
+    const sdf = (x, y, z) => {
+      let d = ell(x, y - .42, z, .66, .42, .58);
+      for (const [cx, cz, r] of [[-.29, -.24, .27], [.29, -.24, .26], [-.3, .23, .26], [.28, .25, .25], [0, .02, .22]]) d = smin(d, len(x - cx, y - .7 + (cx === 0 ? .06 : 0), z - cz) - r, .22);
+      const g = Math.min(cap(x, y, z, -.5, .93, 0, .5, .93, 0, .075), cap(x, y, z, 0, .93, -.42, 0, .93, .42, .06));
+      d = -smin(-d, g, .1);
+      d = smin(d, ell(x, y + .02, z, .5, .3, .44), .25);
+      d = smin(d, cone(x, y, z, -.24, -.05, 0, -.36, -1.2, .02, .24, .07), .2);
+      d = smin(d, cone(x, y, z, .24, -.05, 0, .34, -1.16, -.02, .24, .07), .2);
+      return d;
+    };
+
+    const res = innerWidth < 760 ? 52 : 68;
+    const uni = { uScan: { value: S.scan }, uWhite: { value: S.white }, uGrid: { value: 0 }, uTime: { value: 0 }, uPx: { value: renderer.getPixelRatio() } };
+    const mat = new T.ShaderMaterial({
+      uniforms: uni,
+      vertexShader: `varying vec3 vP;varying vec3 vN;varying vec3 vW;void main(){vP=position;vN=normalize(normalMatrix*normal);vec4 w=modelMatrix*vec4(position,1.);vW=w.xyz;gl_Position=projectionMatrix*viewMatrix*w;}`,
+      fragmentShader: `uniform float uScan,uWhite,uGrid;varying vec3 vP;varying vec3 vN;varying vec3 vW;
+        void main(){
+          float yy=vP.y*1.35-.15;
+          if(yy<uScan) discard;
+          vec3 N=normalize(vN);if(!gl_FrontFacing)N=-N;
+          vec3 V=normalize(cameraPosition-vW);vec3 Nw=N;
+          vec3 L=normalize(vec3(.4,.9,.7));vec3 L2=normalize(vec3(-.8,.1,.3));
+          float df=max(dot(Nw,L),0.)*.75+.25+max(dot(Nw,L2),0.)*.18;
+          vec3 H=normalize(L+V);float sp=pow(max(dot(Nw,H),0.),60.)*.55;
+          float fr=pow(1.-max(dot(Nw,V),0.),3.);
+          vec3 a3=vec3(.87,.79,.63),b1=vec3(.98,.97,.93);
+          vec3 base=mix(a3,b1,uWhite);
+          vec3 root=mix(vec3(.83,.72,.55),vec3(.9,.82,.68),uWhite);
+          vec3 col=mix(root,base,smoothstep(-.35,.12,yy))*df+sp;
+          col+=fr*vec3(.37,.92,.83)*.45;
+          vec3 g=abs(fract(vP*18.)-.5);float line=1.-smoothstep(.0,.06,min(min(g.x,g.y),g.z));
+          col=mix(col,vec3(.37,.92,.83),line*uGrid*.55);
+          float band=1.-smoothstep(0.,.07,yy-uScan);
+          col=mix(col,vec3(.6,1.,.93),band*.9);
+          gl_FragColor=vec4(col,1.);
+        }`,
+      side: T.DoubleSide
+    });
+    const mc = new MarchingCubes(res, mat, false, false, 90000);
+    mc.isolation = 80;
+    const sz = res, half = 1.35;
+    for (let k = 0; k < sz; k++) for (let j = 0; j < sz; j++) for (let i = 0; i < sz; i++) {
+      const x = (i / (sz - 1) - .5) * 2 * half, y = (j / (sz - 1) - .5) * 2 * half - .15, z = (k / (sz - 1) - .5) * 2 * half;
+      mc.field[i + j * sz + k * sz * sz] = 80 - sdf(x, y, z) * 420;
+    }
+    mc.update();
+    const group = new T.Group();
+    mc.scale.setScalar(1.35);
+    group.add(mc);
+
+    /* sparse point cloud for the part not scanned yet */
+    const src = mc.geometry.attributes.position.array, cnt = mc.geometry.drawRange.count || mc.count, step = 6, pts = [];
+    for (let v = 0; v < cnt; v += step) pts.push(src[v * 3], src[v * 3 + 1], src[v * 3 + 2]);
+    const pg = new T.BufferGeometry(); pg.setAttribute("position", new T.Float32BufferAttribute(pts, 3));
+    const pmat = new T.ShaderMaterial({
+      uniforms: uni, transparent: true, depthWrite: false,
+      vertexShader: `uniform float uPx;varying float vy;void main(){vy=position.y*1.35-.15;vec4 mv=modelViewMatrix*vec4(position,1.);gl_PointSize=2.2*uPx*(6./-mv.z);gl_Position=projectionMatrix*mv;}`,
+      fragmentShader: `uniform float uScan;varying float vy;void main(){if(vy>uScan+.02)discard;vec2 c=gl_PointCoord-.5;if(dot(c,c)>.25)discard;float near=1.-smoothstep(0.,.5,uScan-vy);gl_FragColor=vec4(vec3(.37,.92,.83),.35+near*.55);}`
+    });
+    const cloud = new T.Points(pg, pmat); cloud.scale.setScalar(1.35); group.add(cloud);
+
+    /* scan plane ring */
+    const ring = new T.Mesh(new T.RingGeometry(1.25, 1.27, 96), new T.MeshBasicMaterial({ color: 0x5eead4, transparent: true, opacity: .7, side: T.DoubleSide }));
+    ring.rotation.x = -Math.PI / 2; scene.add(ring);
+    const disc = new T.Mesh(new T.CircleGeometry(1.25, 64), new T.MeshBasicMaterial({ color: 0x5eead4, transparent: true, opacity: .06, side: T.DoubleSide, depthWrite: false }));
+    disc.rotation.x = -Math.PI / 2; scene.add(disc);
+
+    group.rotation.set(.18, -.6, 0);
+    scene.add(group);
+
+    const size = () => { const r = stage.getBoundingClientRect(); renderer.setSize(r.width, r.height, false); cam.aspect = r.width / r.height; cam.updateProjectionMatrix(); };
+    size(); new ResizeObserver(size).observe(stage);
+
+    let visible = false, t0 = performance.now(), raf = 0;
+    const frame = t => {
+      raf = 0;
+      const dt = (t - t0) / 1000; t0 = t;
+      if (!RM) group.rotation.y += dt * .12;
+      group.rotation.y += (S.rot - (group.userData.r || 0)); group.userData.r = S.rot;
+      uni.uScan.value = S.scan; uni.uWhite.value = S.white; uni.uGrid.value = S.grid;
+      const sy = Math.max(-1.3, Math.min(1.25, S.scan)) + .15;
+      ring.position.y = disc.position.y = sy;
+      const on = S.scan > -1.25 && S.scan < 1.2;
+      ring.visible = disc.visible = on;
+      renderer.render(scene, cam);
+      if (visible && !RM) raf = requestAnimationFrame(frame);
+    };
+    const kick = () => { if (!raf) raf = requestAnimationFrame(frame); };
+    new IntersectionObserver(([e]) => { visible = e.isIntersecting; if (visible) { t0 = performance.now(); kick(); } }).observe(stage);
+    kick();
+    return { kick };
+  }
+
+  /* lazy-load three when the section gets close */
+  /* (waits for the first interaction, or a quiet moment after load, so it never competes with the first paint) */
+  const lazy = new IntersectionObserver(([e]) => { if (e.isIntersecting) { lazy.disconnect(); startThree(); } }, { rootMargin: "400px 0px" });
+  let armed = false;
+  const arm = () => { if (armed) return; armed = true; ["scroll", "pointerdown", "keydown", "touchstart"].forEach(t => removeEventListener(t, arm)); lazy.observe(stage); };
+  ["scroll", "pointerdown", "keydown", "touchstart"].forEach(t => addEventListener(t, arm, { passive: true }));
+  addEventListener("load", () => setTimeout(arm, 3500));
+  hud();
+
+  document.addEventListener("DOMContentLoaded", () => {
+    if (!window.gsap || !window.ScrollTrigger || RM) { est(); return; }
+    gsap.registerPlugin(ScrollTrigger);
+    est();
+
+    /* scrubbed scan story */
+    document.documentElement.classList.add("js-scan");
+    Object.assign(S, { scan: 1.25, white: 0, grid: 0, rot: 0, p: 0 });
+    hud();
+    const mm = gsap.matchMedia();
+    mm.add({ wide: "(min-width: 901px)", narrow: "(max-width: 900px)" }, ctx => {
+      Object.assign(S, { scan: 1.25, white: 0, grid: 0, rot: 0, p: 0 });
+      const tl = gsap.timeline({
+        defaults: { ease: "none" },
+        scrollTrigger: { trigger: ".scan__pin", start: "top top", end: ctx.conditions.wide ? "+=2800" : "+=2200", pin: true, scrub: .8, anticipatePin: 1 },
+        onUpdate() { S.p = this.progress(); hud(); three?.kick(); }
+      });
+      tl.to(S, { scan: -1.3, duration: 1 })
+        .to(S, { grid: 1, duration: .35, ease: "power1.inOut" }, 1)
+        .to(S, { rot: Math.PI * .9, duration: 1, ease: "power1.inOut" }, 1)
+        .to(S, { grid: 0, duration: .3 }, 1.7)
+        .to(S, { white: 1, duration: 1, ease: "power1.inOut" }, 2)
+        .to(S, { rot: Math.PI * 1.4, duration: 1, ease: "power1.inOut" }, 3)
+        .to({}, { duration: .001 }, 4);
+      return () => { Object.assign(S, { scan: -1.3, white: 1, grid: 0, rot: 0, p: 1 }); hud(); };
+    });
+
+    /* gentle parallax and the setting sun */
+    gsap.to(".hero__sun", { yPercent: 38, ease: "none", scrollTrigger: { trigger: ".hero", start: "top top", end: "bottom top", scrub: true } });
+    $$("[data-par]").forEach(img => gsap.fromTo(img, { yPercent: -5 }, { yPercent: 5, ease: "none", scrollTrigger: { trigger: img.parentElement, start: "top bottom", end: "bottom top", scrub: true } }));
+    gsap.from(".foot__mark", { xPercent: -8, ease: "none", scrollTrigger: { trigger: ".foot", start: "top bottom", end: "bottom bottom", scrub: true } });
+  });
+})();
+</script>
 </body>
 </html>

@@ -1,0 +1,52 @@
+# Cactus Wren Dental
+
+> Family and cosmetic dental office in Arcadia, Phoenix, Arizona. Gentle care for kids and adults, a free 3D smile preview, prices shown up front, most PPO plans, and a membership plan for patients without insurance. English and Spanish spoken.
+
+Note: this is a concept project made for a portfolio. The practice, team, reviews and prices are fictional, and phone numbers use the fictional 555-01xx range. Designed and built by Slobodan Dabic (https://sdabic.com).
+
+## Contact
+- Phone: (602) 555-0163
+- WhatsApp: https://wa.me/16025550163
+- Location: Camelback Rd & 44th St, Phoenix, AZ 85018 (Arcadia). Free covered parking.
+- Hours: Mon–Thu 7:00 AM–5:00 PM, Fri 7:00 AM–2:00 PM, Sat 8:00 AM–12:00 PM, Sun closed. Arizona time (no daylight saving).
+- Online booking: https://cactus-dental.slobodan.workers.dev/#book
+
+## Services and self-pay prices
+- New patient exam, full X-rays and cleaning: $99 (regularly $310)
+- Kids' visit: $85. Children seen from their first tooth (around age one).
+- In-office teeth whitening: $450. Custom take-home trays: $295.
+- Invisalign clear aligners: from $3,900, starting with a free 3D scan.
+- Tooth-colored fillings: from $180. Same-day crowns: $1,290.
+- Dental implant with crown: $3,600.
+- Sedation: nitrous oxide $75, oral sedation available.
+- Emergency exam: $95. Call before 2 pm for a same-day visit.
+
+## 3D smile preview (free)
+1. Scan: a two-minute intraoral scan, with no impression material and no radiation.
+2. See: the teeth appear in 3D on a screen at the chair; the dentist explains what they see.
+3. Preview: whitening, veneers or Invisalign results shown on the patient's own scan (for example shade A3 to B1).
+4. Price: a written quote with the insurance share before any treatment starts.
+
+## Insurance
+- In-network: Delta Dental PPO, Cigna Dental PPO, Aetna Dental PPO, MetLife PDP, Guardian PPO, United Concordia, Blue Cross Blue Shield of Arizona.
+- Out-of-network but accepted: Humana Dental, Ameritas. Claims are filed for the patient.
+- HMO / DHMO plans are not accepted.
+
+## Wren Smile Plan (no insurance)
+- Adult: $29/month or $299/year. Child (under 14): $19/month or $199/year.
+- Includes 2 cleanings and exams per year, all routine X-rays and 1 emergency exam. Adults get 15% off fillings, crowns and implants; children get fluoride and sealants.
+- No deductibles, waiting periods or claim forms.
+
+## Payment
+Cash, all major cards, HSA/FSA, CareCredit and Sunbit (0% financing over $500 for qualified patients).
+
+## Team
+- Dr. Elena Márquez, DDS: founder, family and cosmetic dentistry, 14 years in practice, English and Spanish.
+- Dr. Omar Haddad, DMD: implants and oral surgery.
+- Dr. Ben Whitaker, DMD: orthodontics and Invisalign.
+- Lina Tran, RDH: lead dental hygienist.
+
+## FAQ
+- First visit: bring a photo ID, insurance card and a list of medications. New patient forms can be filled out online.
+- Nervous patients: extra time, noise-cancelling headphones, weighted blanket, nitrous oxide or oral sedation; raise a hand to pause at any time.
+- Spanish: yes, Dr. Márquez and much of the team speak Spanish.
