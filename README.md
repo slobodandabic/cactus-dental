@@ -10,6 +10,6 @@ Built as a portfolio project by [Slobodan Dabic](https://sdabic.com).
 - Online booking in 4 steps with real open days and time slots (demo), prefilled from any offer or estimate.
 - Insurance checker, cost estimator (PPO vs. membership vs. self-pay) and a membership plan.
 - Live "open now" status based on Phoenix time.
-- Fonts: Bricolage Grotesque and JetBrains Mono, self-hosted (SIL OFL).
+- Fonts: Manrope and JetBrains Mono, self-hosted (SIL OFL).
 
 Cactus Wren Dental, its team members, reviews and prices are fictional. Phone numbers use the fictional 555-01xx range. Photos are stock images; logos and names on uniforms were blurred.
