@@ -273,6 +273,14 @@ ul,ol{margin:0;padding:0;list-style:none}
   .js-scan .stage{max-height:calc(100vh - 150px);max-width:calc(100vh - 150px)}
   .js-scan .scan .h2{font-size:clamp(34px,4.4vh,56px)}
   .js-scan .steps{margin-top:26px}
+  .js-scan .scan__grid{grid-template-rows:minmax(0,1fr)}
+  .js-scan .stage{max-height:100%}
+}
+@media (min-width:901px) and (max-height:820px){
+  .js-scan .scan__copy .sub{display:none}
+  .js-scan .steps{margin-top:14px}
+  .js-scan .steps li{padding:10px 0}
+  .js-scan .scan__cta{margin-top:16px}
 }
 .scan__cta{margin-top:32px;display:flex;flex-wrap:wrap;gap:12px}
 .btn--scan{--bg:var(--scan);--fg:var(--night)}
