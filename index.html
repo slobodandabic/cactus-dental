@@ -191,15 +191,19 @@ ul,ol{margin:0;padding:0;list-style:none}
 .hero{position:relative;padding:clamp(40px,6vw,84px) 0 clamp(70px,8vw,110px);overflow:hidden}
 .hero__grid{display:grid;grid-template-columns:1.08fr .92fr;gap:clamp(30px,5vw,80px);align-items:center}
 .hero h1{font-size:clamp(42px,6.4vw,96px);font-weight:800;letter-spacing:-.045em;line-height:.95;margin-top:22px}
-.hero h1 .w{display:inline-block;overflow:hidden;vertical-align:top;padding-bottom:.08em;margin-bottom:-.08em}
-.hero h1 .w>span{display:inline-block}
-.js .hero h1 .w>span{animation:rise 1.1s var(--ease) both;animation-delay:calc(var(--i) * 70ms + 80ms)}
-@keyframes rise{from{transform:translateY(105%)}to{transform:none}}
-.hero h1 em{font-style:normal;color:var(--teal);position:relative;display:inline-block}
-.hero h1 em svg{position:absolute;left:-2%;width:104%;bottom:-.1em;height:.24em;overflow:visible}
-.hero h1 em path{fill:none;stroke:var(--mint);stroke-width:7;stroke-linecap:round;stroke-dasharray:420;stroke-dashoffset:0}
-.js .hero h1 em path{animation:draw 1.2s 1s var(--ease) both}
-@keyframes draw{from{stroke-dashoffset:420}}
+/* headline "scan": dotted point-cloud text turns solid as a scanner line passes */
+@property --scan{syntax:"<percentage>";inherits:true;initial-value:100%}
+@property --pct{syntax:"<integer>";inherits:true;initial-value:100}
+.scanh{position:relative}
+.scanh__solid{display:block;clip-path:inset(0 0 calc(100% - var(--scan)) 0)}
+.scanh__ghost{position:absolute;inset:0;color:transparent;background:radial-gradient(circle,var(--teal) 1.15px,transparent 1.6px) 0 0/5px 5px;-webkit-background-clip:text;background-clip:text;-webkit-text-stroke:1px rgba(11,122,111,.3);clip-path:inset(var(--scan) 0 0 0);pointer-events:none}
+.scanh__beam{position:absolute;left:-1%;right:-1%;top:var(--scan);height:2px;margin-top:-1px;background:var(--mint);box-shadow:0 0 16px 3px rgba(110,231,210,.75);opacity:0;pointer-events:none}
+.scanh__beam i{position:absolute;right:0;top:9px;font:500 11px/1 var(--mono);letter-spacing:.12em;color:var(--teal-d);font-style:normal;white-space:nowrap;counter-reset:p var(--pct)}
+.scanh__beam i::after{content:" \00b7  " counter(p) "%"}
+.js .scanh{animation:scanh 1.8s .2s cubic-bezier(.45,.05,.35,1) both}
+.js .scanh__beam{animation:beam 1.8s .2s both}
+@keyframes scanh{from{--scan:0%;--pct:0}to{--scan:100%;--pct:100}}
+@keyframes beam{0%{opacity:0}6%{opacity:1}90%{opacity:1}100%{opacity:0}}
 .lead{font-size:clamp(18px,1.5vw,21px);color:var(--ink-2);max-width:31em;margin-top:28px}
 .hero__cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
 .proof{display:flex;flex-wrap:wrap;align-items:center;gap:14px 26px;margin-top:38px;padding-top:26px;border-top:1px solid var(--line)}
@@ -625,7 +629,7 @@ input.bad{border-color:var(--urgent)}
   <div class="wrap hero__grid">
     <div>
       <p class="kicker">Family &amp; cosmetic dentist · Arcadia, Phoenix</p>
-      <h1 id="heroTitle">A dentist you’ll <em>actually<svg viewBox="0 0 300 20" preserveAspectRatio="none" aria-hidden="true"><path d="M4 14C60 5 140 3 296 10"/></svg></em> look forward to.</h1>
+      <h1 id="heroTitle" class="scanh"><span class="scanh__solid">A dentist you’ll actually look forward to.</span><span class="scanh__ghost" aria-hidden="true">A dentist you’ll actually look forward to.</span><span class="scanh__beam" aria-hidden="true"><i>CW·SCAN</i></span></h1>
       <p class="lead">Gentle care for kids, parents and grandparents under one roof. We show you a 3D scan of your teeth, tell you the exact price before we start, and never rush you out the door.</p>
       <div class="hero__cta">
         <a href="#book" class="btn btn--teal" data-reason="Cleaning & checkup">Book a visit <span class="arr" aria-hidden="true">→</span></a>
@@ -1030,34 +1034,6 @@ input.bad{border-color:var(--urgent)}
     if (me === "1") localStorage.setItem("cw-me", "1");
     if (me === "0") localStorage.removeItem("cw-me");
   } catch (e) {}
-
-  /* hero title: split words for the rise-in */
-  const h1 = $("#heroTitle");
-  if (!RM) {
-    let i = 0;
-    const wrapWords = node => {
-      [...node.childNodes].forEach(n => {
-        if (n.nodeType === 3) {
-          const frag = document.createDocumentFragment();
-          n.textContent.split(/(\s+)/).forEach(t => {
-            if (!t) return;
-            if (/^\s+$/.test(t)) { frag.append(t); return; }
-            const w = document.createElement("span"); w.className = "w";
-            const s = document.createElement("span"); s.textContent = t; s.style.setProperty("--i", i++);
-            w.append(s); frag.append(w);
-          });
-          n.replaceWith(frag);
-        } else if (n.tagName === "EM") {
-          const w = document.createElement("span"); w.className = "w";
-          const s = document.createElement("span"); s.style.setProperty("--i", i++);
-          n.replaceWith(w); s.append(n); w.append(s);
-        }
-      });
-    };
-    h1.setAttribute("aria-label", h1.textContent.replace(/\s+/g, " ").trim());
-    wrapWords(h1);
-    [...h1.children].forEach(c => c.setAttribute("aria-hidden", "true"));
-  }
 
   /* Phoenix time */
   const TZ = "America/Phoenix";
